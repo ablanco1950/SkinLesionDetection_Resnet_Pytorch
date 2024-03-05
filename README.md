@@ -53,6 +53,14 @@ The log of its execution is attached as LOG_Test_SkinCancer.txt
 
 The screen indicates the successes and failures, giving a success rate of 81.13%
 
+To obtain predictions on images for which the skin lesion classification is not known and which are assumed to be in a folder called Test within the project, the program will be executed:
+
+Recognize_SkinCancer_Resnet_Pytorch.py
+
+Through the console, the prediction is obtained for each image and also in the output file
+
+ModelsResults.txt
+
 References:
 
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
