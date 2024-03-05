@@ -1,0 +1,26 @@
+
+(alfonso1) c:\SkinCancerDetection_Resnet_Pytorch>python Train224x224_SkinCancer_Resnet_Pytorch.py
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+No. epochs: 1,             Training Loss: 0.878             Valid Loss: 0.798             Valid Accuracy: 0.74
+No. epochs: 2,             Training Loss: 0.324             Valid Loss: 0.59             Valid Accuracy: 0.784
+No. epochs: 3,             Training Loss: 0.103             Valid Loss: 0.521             Valid Accuracy: 0.812
+No. epochs: 3,             Training Loss: 0.511             Valid Loss: 0.54             Valid Accuracy: 0.819
+No. epochs: 4,             Training Loss: 0.288             Valid Loss: 0.503             Valid Accuracy: 0.822
+No. epochs: 5,             Training Loss: 0.11             Valid Loss: 0.396             Valid Accuracy: 0.858
+No. epochs: 6,             Training Loss: 0.021             Valid Loss: 0.383             Valid Accuracy: 0.867
+No. epochs: 6,             Training Loss: 0.205             Valid Loss: 0.4             Valid Accuracy: 0.858
+No. epochs: 7,             Training Loss: 0.119             Valid Loss: 0.39             Valid Accuracy: 0.864
+No. epochs: 8,             Training Loss: 0.065             Valid Loss: 0.394             Valid Accuracy: 0.863
+No. epochs: 8,             Training Loss: 0.207             Valid Loss: 0.385             Valid Accuracy: 0.864
+No. epochs: 9,             Training Loss: 0.148             Valid Loss: 0.382             Valid Accuracy: 0.86
+No. epochs: 10,             Training Loss: 0.089             Valid Loss: 0.386             Valid Accuracy: 0.863
+Test accuracy of model: 79.167%
+
+(alfonso1) c:\SkinCancerDetection_Resnet_Pytorch>

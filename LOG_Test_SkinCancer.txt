@@ -1,0 +1,1543 @@
+==================== RESTART: C:/SkinCancerDetection_Resnet_Pytorch/Guess_Test_224x224SkinCancer_Resnet_Pytorch.py ===================
+
+Warning (from warnings module):
+  File "C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\_distributor_init.py", line 30
+    warnings.warn("loaded more than 1 DLL from .libs:"
+UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+
+Warning (from warnings module):
+  File "C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py", line 208
+    warnings.warn(
+UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+
+Warning (from warnings module):
+  File "C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py", line 223
+    warnings.warn(msg)
+UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+['akiec', 'bcc', 'bkl', 'df', 'mel', 'nv', 'vasc'] {'akiec': 0, 'bcc': 1, 'bkl': 2, 'df': 3, 'mel': 4, 'nv': 5, 'vasc': 6}
+Reading imagenes from  Dir_Test_SkinCancer_Resnet_Pytorch\test\
+akiec
+bcc
+bkl
+df
+mel
+nv
+vasc
+ Total images to test 1511
+HIT ISIC_0034536.jpg is assigned model akiec
+HIT ISIC_0034538.jpg is assigned model akiec
+HIT ISIC_0034579.jpg is assigned model akiec
+ERROR ISIC_0034585.jpg is assigned Model df  True Model akiec
+HIT ISIC_0034669.jpg is assigned model akiec
+ERROR ISIC_0034733.jpg is assigned Model mel  True Model akiec
+ERROR ISIC_0034748.jpg is assigned Model bcc  True Model akiec
+HIT ISIC_0034753.jpg is assigned model akiec
+ERROR ISIC_0034870.jpg is assigned Model mel  True Model akiec
+ERROR ISIC_0034898.jpg is assigned Model bkl  True Model akiec
+HIT ISIC_0034906.jpg is assigned model akiec
+HIT ISIC_0034961.jpg is assigned model akiec
+ERROR ISIC_0034970.jpg is assigned Model nv  True Model akiec
+ERROR ISIC_0034982.jpg is assigned Model bkl  True Model akiec
+HIT ISIC_0035001.jpg is assigned model akiec
+ERROR ISIC_0035008.jpg is assigned Model bkl  True Model akiec
+HIT ISIC_0035029.jpg is assigned model akiec
+HIT ISIC_0035078.jpg is assigned model akiec
+ERROR ISIC_0035117.jpg is assigned Model bcc  True Model akiec
+HIT ISIC_0035119.jpg is assigned model akiec
+HIT ISIC_0035128.jpg is assigned model akiec
+HIT ISIC_0035149.jpg is assigned model akiec
+HIT ISIC_0035210.jpg is assigned model akiec
+HIT ISIC_0035287.jpg is assigned model akiec
+HIT ISIC_0035317.jpg is assigned model akiec
+HIT ISIC_0035330.jpg is assigned model akiec
+HIT ISIC_0035348.jpg is assigned model akiec
+HIT ISIC_0035368.jpg is assigned model akiec
+HIT ISIC_0035372.jpg is assigned model akiec
+HIT ISIC_0035376.jpg is assigned model akiec
+HIT ISIC_0035421.jpg is assigned model akiec
+ERROR ISIC_0035443.jpg is assigned Model bkl  True Model akiec
+ERROR ISIC_0035553.jpg is assigned Model mel  True Model akiec
+HIT ISIC_0035608.jpg is assigned model akiec
+HIT ISIC_0035626.jpg is assigned model akiec
+HIT ISIC_0035630.jpg is assigned model akiec
+HIT ISIC_0035642.jpg is assigned model akiec
+ERROR ISIC_0035643.jpg is assigned Model nv  True Model akiec
+ERROR ISIC_0035691.jpg is assigned Model nv  True Model akiec
+ERROR ISIC_0035842.jpg is assigned Model nv  True Model akiec
+HIT ISIC_0035882.jpg is assigned model akiec
+HIT ISIC_0035915.jpg is assigned model akiec
+HIT ISIC_0036062.jpg is assigned model akiec
+HIT ISIC_0034545.jpg is assigned model bcc
+HIT ISIC_0034554.jpg is assigned model bcc
+ERROR ISIC_0034565.jpg is assigned Model mel  True Model bcc
+ERROR ISIC_0034588.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0034598.jpg is assigned model bcc
+HIT ISIC_0034606.jpg is assigned model bcc
+HIT ISIC_0034612.jpg is assigned model bcc
+HIT ISIC_0034679.jpg is assigned model bcc
+HIT ISIC_0034682.jpg is assigned model bcc
+HIT ISIC_0034695.jpg is assigned model bcc
+HIT ISIC_0034699.jpg is assigned model bcc
+HIT ISIC_0034712.jpg is assigned model bcc
+HIT ISIC_0034759.jpg is assigned model bcc
+ERROR ISIC_0034760.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0034833.jpg is assigned model bcc
+HIT ISIC_0034879.jpg is assigned model bcc
+HIT ISIC_0034888.jpg is assigned model bcc
+HIT ISIC_0034891.jpg is assigned model bcc
+HIT ISIC_0034899.jpg is assigned model bcc
+ERROR ISIC_0034910.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0034936.jpg is assigned model bcc
+HIT ISIC_0034946.jpg is assigned model bcc
+ERROR ISIC_0034952.jpg is assigned Model akiec  True Model bcc
+HIT ISIC_0034960.jpg is assigned model bcc
+ERROR ISIC_0034966.jpg is assigned Model bkl  True Model bcc
+ERROR ISIC_0034995.jpg is assigned Model mel  True Model bcc
+HIT ISIC_0035026.jpg is assigned model bcc
+HIT ISIC_0035033.jpg is assigned model bcc
+HIT ISIC_0035041.jpg is assigned model bcc
+ERROR ISIC_0035072.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0035106.jpg is assigned model bcc
+HIT ISIC_0035112.jpg is assigned model bcc
+HIT ISIC_0035120.jpg is assigned model bcc
+ERROR ISIC_0035171.jpg is assigned Model akiec  True Model bcc
+ERROR ISIC_0035202.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0035254.jpg is assigned model bcc
+HIT ISIC_0035262.jpg is assigned model bcc
+ERROR ISIC_0035291.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0035305.jpg is assigned model bcc
+HIT ISIC_0035308.jpg is assigned model bcc
+HIT ISIC_0035310.jpg is assigned model bcc
+ERROR ISIC_0035322.jpg is assigned Model akiec  True Model bcc
+HIT ISIC_0035332.jpg is assigned model bcc
+HIT ISIC_0035334.jpg is assigned model bcc
+HIT ISIC_0035355.jpg is assigned model bcc
+HIT ISIC_0035357.jpg is assigned model bcc
+ERROR ISIC_0035374.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0035389.jpg is assigned model bcc
+HIT ISIC_0035415.jpg is assigned model bcc
+HIT ISIC_0035432.jpg is assigned model bcc
+ERROR ISIC_0035446.jpg is assigned Model mel  True Model bcc
+ERROR ISIC_0035450.jpg is assigned Model mel  True Model bcc
+HIT ISIC_0035468.jpg is assigned model bcc
+ERROR ISIC_0035490.jpg is assigned Model akiec  True Model bcc
+HIT ISIC_0035547.jpg is assigned model bcc
+ERROR ISIC_0035585.jpg is assigned Model akiec  True Model bcc
+HIT ISIC_0035586.jpg is assigned model bcc
+ERROR ISIC_0035594.jpg is assigned Model nv  True Model bcc
+ERROR ISIC_0035625.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0035658.jpg is assigned model bcc
+HIT ISIC_0035660.jpg is assigned model bcc
+HIT ISIC_0035667.jpg is assigned model bcc
+ERROR ISIC_0035683.jpg is assigned Model vasc  True Model bcc
+HIT ISIC_0035692.jpg is assigned model bcc
+HIT ISIC_0035718.jpg is assigned model bcc
+HIT ISIC_0035733.jpg is assigned model bcc
+HIT ISIC_0035744.jpg is assigned model bcc
+ERROR ISIC_0035752.jpg is assigned Model nv  True Model bcc
+ERROR ISIC_0035761.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0035772.jpg is assigned model bcc
+ERROR ISIC_0035790.jpg is assigned Model vasc  True Model bcc
+HIT ISIC_0035824.jpg is assigned model bcc
+HIT ISIC_0035848.jpg is assigned model bcc
+HIT ISIC_0035855.jpg is assigned model bcc
+HIT ISIC_0035871.jpg is assigned model bcc
+HIT ISIC_0035876.jpg is assigned model bcc
+HIT ISIC_0035901.jpg is assigned model bcc
+ERROR ISIC_0035933.jpg is assigned Model akiec  True Model bcc
+ERROR ISIC_0035942.jpg is assigned Model nv  True Model bcc
+HIT ISIC_0035957.jpg is assigned model bcc
+ERROR ISIC_0035960.jpg is assigned Model nv  True Model bcc
+ERROR ISIC_0035976.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0035977.jpg is assigned model bcc
+HIT ISIC_0036002.jpg is assigned model bcc
+ERROR ISIC_0036004.jpg is assigned Model nv  True Model bcc
+ERROR ISIC_0036006.jpg is assigned Model df  True Model bcc
+ERROR ISIC_0036009.jpg is assigned Model bkl  True Model bcc
+HIT ISIC_0036011.jpg is assigned model bcc
+HIT ISIC_0036016.jpg is assigned model bcc
+ERROR ISIC_0036022.jpg is assigned Model df  True Model bcc
+HIT ISIC_0036031.jpg is assigned model bcc
+HIT ISIC_0036035.jpg is assigned model bcc
+HIT ISIC_0036064.jpg is assigned model bcc
+HIT ISIC_0034526.jpg is assigned model bkl
+HIT ISIC_0034531.jpg is assigned model bkl
+HIT ISIC_0034535.jpg is assigned model bkl
+ERROR ISIC_0034539.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0034542.jpg is assigned model bkl
+HIT ISIC_0034546.jpg is assigned model bkl
+HIT ISIC_0034547.jpg is assigned model bkl
+HIT ISIC_0034561.jpg is assigned model bkl
+HIT ISIC_0034570.jpg is assigned model bkl
+HIT ISIC_0034571.jpg is assigned model bkl
+HIT ISIC_0034574.jpg is assigned model bkl
+ERROR ISIC_0034575.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034578.jpg is assigned model bkl
+HIT ISIC_0034591.jpg is assigned model bkl
+HIT ISIC_0034596.jpg is assigned model bkl
+ERROR ISIC_0034614.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034615.jpg is assigned model bkl
+ERROR ISIC_0034618.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034622.jpg is assigned model bkl
+HIT ISIC_0034631.jpg is assigned model bkl
+HIT ISIC_0034646.jpg is assigned model bkl
+HIT ISIC_0034651.jpg is assigned model bkl
+HIT ISIC_0034652.jpg is assigned model bkl
+HIT ISIC_0034656.jpg is assigned model bkl
+ERROR ISIC_0034663.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0034675.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0034684.jpg is assigned model bkl
+ERROR ISIC_0034685.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034686.jpg is assigned model bkl
+HIT ISIC_0034691.jpg is assigned model bkl
+HIT ISIC_0034692.jpg is assigned model bkl
+HIT ISIC_0034693.jpg is assigned model bkl
+ERROR ISIC_0034694.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034706.jpg is assigned model bkl
+HIT ISIC_0034710.jpg is assigned model bkl
+HIT ISIC_0034711.jpg is assigned model bkl
+ERROR ISIC_0034720.jpg is assigned Model bcc  True Model bkl
+HIT ISIC_0034723.jpg is assigned model bkl
+HIT ISIC_0034724.jpg is assigned model bkl
+ERROR ISIC_0034746.jpg is assigned Model df  True Model bkl
+HIT ISIC_0034750.jpg is assigned model bkl
+ERROR ISIC_0034751.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0034755.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0034758.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034770.jpg is assigned model bkl
+HIT ISIC_0034782.jpg is assigned model bkl
+HIT ISIC_0034785.jpg is assigned model bkl
+HIT ISIC_0034794.jpg is assigned model bkl
+HIT ISIC_0034802.jpg is assigned model bkl
+ERROR ISIC_0034812.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034825.jpg is assigned model bkl
+ERROR ISIC_0034826.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034840.jpg is assigned model bkl
+HIT ISIC_0034842.jpg is assigned model bkl
+HIT ISIC_0034849.jpg is assigned model bkl
+HIT ISIC_0034850.jpg is assigned model bkl
+ERROR ISIC_0034914.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034915.jpg is assigned model bkl
+ERROR ISIC_0034930.jpg is assigned Model df  True Model bkl
+HIT ISIC_0034931.jpg is assigned model bkl
+HIT ISIC_0034939.jpg is assigned model bkl
+ERROR ISIC_0034948.jpg is assigned Model mel  True Model bkl
+ERROR ISIC_0034953.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0034972.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0034980.jpg is assigned model bkl
+HIT ISIC_0034987.jpg is assigned model bkl
+HIT ISIC_0034993.jpg is assigned model bkl
+ERROR ISIC_0034994.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0034997.jpg is assigned model bkl
+HIT ISIC_0034999.jpg is assigned model bkl
+HIT ISIC_0035004.jpg is assigned model bkl
+HIT ISIC_0035010.jpg is assigned model bkl
+HIT ISIC_0035018.jpg is assigned model bkl
+HIT ISIC_0035028.jpg is assigned model bkl
+HIT ISIC_0035032.jpg is assigned model bkl
+HIT ISIC_0035035.jpg is assigned model bkl
+HIT ISIC_0035037.jpg is assigned model bkl
+HIT ISIC_0035039.jpg is assigned model bkl
+HIT ISIC_0035040.jpg is assigned model bkl
+ERROR ISIC_0035043.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035057.jpg is assigned model bkl
+HIT ISIC_0035075.jpg is assigned model bkl
+HIT ISIC_0035076.jpg is assigned model bkl
+HIT ISIC_0035095.jpg is assigned model bkl
+ERROR ISIC_0035104.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035109.jpg is assigned model bkl
+HIT ISIC_0035110.jpg is assigned model bkl
+HIT ISIC_0035115.jpg is assigned model bkl
+ERROR ISIC_0035125.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035127.jpg is assigned model bkl
+HIT ISIC_0035131.jpg is assigned model bkl
+ERROR ISIC_0035136.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035142.jpg is assigned model bkl
+HIT ISIC_0035151.jpg is assigned model bkl
+HIT ISIC_0035154.jpg is assigned model bkl
+HIT ISIC_0035155.jpg is assigned model bkl
+ERROR ISIC_0035163.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035168.jpg is assigned model bkl
+HIT ISIC_0035179.jpg is assigned model bkl
+HIT ISIC_0035180.jpg is assigned model bkl
+HIT ISIC_0035185.jpg is assigned model bkl
+HIT ISIC_0035190.jpg is assigned model bkl
+HIT ISIC_0035212.jpg is assigned model bkl
+HIT ISIC_0035218.jpg is assigned model bkl
+HIT ISIC_0035243.jpg is assigned model bkl
+HIT ISIC_0035258.jpg is assigned model bkl
+HIT ISIC_0035261.jpg is assigned model bkl
+HIT ISIC_0035264.jpg is assigned model bkl
+ERROR ISIC_0035270.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035277.jpg is assigned Model akiec  True Model bkl
+HIT ISIC_0035284.jpg is assigned model bkl
+HIT ISIC_0035293.jpg is assigned model bkl
+ERROR ISIC_0035316.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035318.jpg is assigned model bkl
+ERROR ISIC_0035321.jpg is assigned Model bcc  True Model bkl
+HIT ISIC_0035331.jpg is assigned model bkl
+HIT ISIC_0035340.jpg is assigned model bkl
+ERROR ISIC_0035364.jpg is assigned Model akiec  True Model bkl
+ERROR ISIC_0035388.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035391.jpg is assigned model bkl
+ERROR ISIC_0035403.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035416.jpg is assigned model bkl
+ERROR ISIC_0035436.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035451.jpg is assigned model bkl
+HIT ISIC_0035463.jpg is assigned model bkl
+HIT ISIC_0035464.jpg is assigned model bkl
+ERROR ISIC_0035466.jpg is assigned Model akiec  True Model bkl
+HIT ISIC_0035471.jpg is assigned model bkl
+HIT ISIC_0035472.jpg is assigned model bkl
+ERROR ISIC_0035487.jpg is assigned Model mel  True Model bkl
+ERROR ISIC_0035504.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035511.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035517.jpg is assigned model bkl
+HIT ISIC_0035533.jpg is assigned model bkl
+ERROR ISIC_0035538.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035556.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035564.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035570.jpg is assigned model bkl
+ERROR ISIC_0035584.jpg is assigned Model bcc  True Model bkl
+ERROR ISIC_0035589.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035590.jpg is assigned model bkl
+HIT ISIC_0035593.jpg is assigned model bkl
+ERROR ISIC_0035607.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035612.jpg is assigned model bkl
+HIT ISIC_0035613.jpg is assigned model bkl
+HIT ISIC_0035619.jpg is assigned model bkl
+HIT ISIC_0035624.jpg is assigned model bkl
+HIT ISIC_0035627.jpg is assigned model bkl
+ERROR ISIC_0035631.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035634.jpg is assigned Model bcc  True Model bkl
+ERROR ISIC_0035635.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035645.jpg is assigned Model df  True Model bkl
+ERROR ISIC_0035655.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035661.jpg is assigned model bkl
+HIT ISIC_0035664.jpg is assigned model bkl
+ERROR ISIC_0035669.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035676.jpg is assigned model bkl
+ERROR ISIC_0035679.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035694.jpg is assigned model bkl
+ERROR ISIC_0035701.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035715.jpg is assigned model bkl
+ERROR ISIC_0035730.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035735.jpg is assigned Model mel  True Model bkl
+ERROR ISIC_0035739.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035741.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035750.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035751.jpg is assigned model bkl
+HIT ISIC_0035753.jpg is assigned model bkl
+ERROR ISIC_0035754.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035755.jpg is assigned model bkl
+HIT ISIC_0035763.jpg is assigned model bkl
+ERROR ISIC_0035765.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035768.jpg is assigned model bkl
+HIT ISIC_0035776.jpg is assigned model bkl
+HIT ISIC_0035787.jpg is assigned model bkl
+HIT ISIC_0035799.jpg is assigned model bkl
+HIT ISIC_0035802.jpg is assigned model bkl
+ERROR ISIC_0035805.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035807.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035810.jpg is assigned model bkl
+ERROR ISIC_0035818.jpg is assigned Model bcc  True Model bkl
+ERROR ISIC_0035829.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035831.jpg is assigned model bkl
+HIT ISIC_0035833.jpg is assigned model bkl
+ERROR ISIC_0035834.jpg is assigned Model mel  True Model bkl
+ERROR ISIC_0035847.jpg is assigned Model mel  True Model bkl
+ERROR ISIC_0035865.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035866.jpg is assigned model bkl
+HIT ISIC_0035873.jpg is assigned model bkl
+HIT ISIC_0035878.jpg is assigned model bkl
+HIT ISIC_0035881.jpg is assigned model bkl
+HIT ISIC_0035899.jpg is assigned model bkl
+HIT ISIC_0035908.jpg is assigned model bkl
+ERROR ISIC_0035917.jpg is assigned Model vasc  True Model bkl
+ERROR ISIC_0035918.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0035926.jpg is assigned model bkl
+HIT ISIC_0035932.jpg is assigned model bkl
+ERROR ISIC_0035937.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035949.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035950.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0035953.jpg is assigned Model mel  True Model bkl
+HIT ISIC_0035959.jpg is assigned model bkl
+HIT ISIC_0035993.jpg is assigned model bkl
+HIT ISIC_0035996.jpg is assigned model bkl
+HIT ISIC_0036003.jpg is assigned model bkl
+HIT ISIC_0036008.jpg is assigned model bkl
+ERROR ISIC_0036015.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0036019.jpg is assigned model bkl
+ERROR ISIC_0036021.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0036023.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0036025.jpg is assigned model bkl
+ERROR ISIC_0036032.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0036043.jpg is assigned model bkl
+ERROR ISIC_0036050.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0036053.jpg is assigned model bkl
+HIT ISIC_0036060.jpg is assigned model bkl
+HIT ISIC_0036063.jpg is assigned model bkl
+ERROR ISIC_0034597.jpg is assigned Model akiec  True Model df
+ERROR ISIC_0034642.jpg is assigned Model bcc  True Model df
+ERROR ISIC_0034666.jpg is assigned Model nv  True Model df
+HIT ISIC_0034719.jpg is assigned model df
+HIT ISIC_0034766.jpg is assigned model df
+ERROR ISIC_0034820.jpg is assigned Model nv  True Model df
+ERROR ISIC_0034876.jpg is assigned Model nv  True Model df
+HIT ISIC_0035012.jpg is assigned model df
+HIT ISIC_0035042.jpg is assigned model df
+ERROR ISIC_0035054.jpg is assigned Model nv  True Model df
+HIT ISIC_0035064.jpg is assigned model df
+HIT ISIC_0035147.jpg is assigned model df
+HIT ISIC_0035239.jpg is assigned model df
+ERROR ISIC_0035259.jpg is assigned Model nv  True Model df
+ERROR ISIC_0035276.jpg is assigned Model bcc  True Model df
+HIT ISIC_0035338.jpg is assigned model df
+ERROR ISIC_0035360.jpg is assigned Model nv  True Model df
+HIT ISIC_0035439.jpg is assigned model df
+ERROR ISIC_0035440.jpg is assigned Model nv  True Model df
+HIT ISIC_0035454.jpg is assigned model df
+HIT ISIC_0035552.jpg is assigned model df
+ERROR ISIC_0035588.jpg is assigned Model mel  True Model df
+HIT ISIC_0035622.jpg is assigned model df
+ERROR ISIC_0035650.jpg is assigned Model nv  True Model df
+ERROR ISIC_0035675.jpg is assigned Model nv  True Model df
+ERROR ISIC_0035677.jpg is assigned Model bkl  True Model df
+HIT ISIC_0035685.jpg is assigned model df
+ERROR ISIC_0035695.jpg is assigned Model nv  True Model df
+HIT ISIC_0035723.jpg is assigned model df
+HIT ISIC_0035729.jpg is assigned model df
+ERROR ISIC_0035759.jpg is assigned Model nv  True Model df
+HIT ISIC_0035778.jpg is assigned model df
+HIT ISIC_0035821.jpg is assigned model df
+HIT ISIC_0035844.jpg is assigned model df
+ERROR ISIC_0035863.jpg is assigned Model nv  True Model df
+HIT ISIC_0035890.jpg is assigned model df
+ERROR ISIC_0035904.jpg is assigned Model akiec  True Model df
+HIT ISIC_0035919.jpg is assigned model df
+HIT ISIC_0035940.jpg is assigned model df
+ERROR ISIC_0035944.jpg is assigned Model mel  True Model df
+HIT ISIC_0035955.jpg is assigned model df
+HIT ISIC_0035982.jpg is assigned model df
+HIT ISIC_0036007.jpg is assigned model df
+ERROR ISIC_0036018.jpg is assigned Model nv  True Model df
+HIT ISIC_0034529.jpg is assigned model mel
+ERROR ISIC_0034548.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0034572.jpg is assigned model mel
+ERROR ISIC_0034573.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034584.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034595.jpg is assigned model mel
+HIT ISIC_0034605.jpg is assigned model mel
+HIT ISIC_0034628.jpg is assigned model mel
+ERROR ISIC_0034630.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034633.jpg is assigned model mel
+HIT ISIC_0034638.jpg is assigned model mel
+ERROR ISIC_0034644.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034650.jpg is assigned model mel
+HIT ISIC_0034655.jpg is assigned model mel
+ERROR ISIC_0034657.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034687.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0034713.jpg is assigned model mel
+ERROR ISIC_0034714.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034737.jpg is assigned model mel
+HIT ISIC_0034764.jpg is assigned model mel
+HIT ISIC_0034771.jpg is assigned model mel
+ERROR ISIC_0034784.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034804.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034817.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034819.jpg is assigned model mel
+HIT ISIC_0034859.jpg is assigned model mel
+HIT ISIC_0034863.jpg is assigned model mel
+ERROR ISIC_0034871.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034873.jpg is assigned Model df  True Model mel
+HIT ISIC_0034874.jpg is assigned model mel
+HIT ISIC_0034875.jpg is assigned model mel
+HIT ISIC_0034882.jpg is assigned model mel
+HIT ISIC_0034895.jpg is assigned model mel
+ERROR ISIC_0034904.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0034918.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034926.jpg is assigned model mel
+ERROR ISIC_0034934.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0034949.jpg is assigned model mel
+HIT ISIC_0034957.jpg is assigned model mel
+HIT ISIC_0034958.jpg is assigned model mel
+HIT ISIC_0034959.jpg is assigned model mel
+HIT ISIC_0034971.jpg is assigned model mel
+ERROR ISIC_0034988.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034998.jpg is assigned model mel
+HIT ISIC_0035000.jpg is assigned model mel
+ERROR ISIC_0035021.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035047.jpg is assigned model mel
+ERROR ISIC_0035048.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035070.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035081.jpg is assigned model mel
+ERROR ISIC_0035089.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035090.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035099.jpg is assigned model mel
+ERROR ISIC_0035124.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035130.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035139.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035177.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035196.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035207.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035216.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035224.jpg is assigned model mel
+ERROR ISIC_0035229.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0035232.jpg is assigned model mel
+HIT ISIC_0035240.jpg is assigned model mel
+HIT ISIC_0035248.jpg is assigned model mel
+HIT ISIC_0035263.jpg is assigned model mel
+HIT ISIC_0035271.jpg is assigned model mel
+HIT ISIC_0035280.jpg is assigned model mel
+HIT ISIC_0035306.jpg is assigned model mel
+HIT ISIC_0035313.jpg is assigned model mel
+HIT ISIC_0035326.jpg is assigned model mel
+ERROR ISIC_0035345.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035351.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035362.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035366.jpg is assigned model mel
+HIT ISIC_0035393.jpg is assigned model mel
+ERROR ISIC_0035397.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035406.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035414.jpg is assigned model mel
+ERROR ISIC_0035420.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035430.jpg is assigned model mel
+HIT ISIC_0035434.jpg is assigned model mel
+ERROR ISIC_0035459.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0035460.jpg is assigned model mel
+HIT ISIC_0035462.jpg is assigned model mel
+HIT ISIC_0035478.jpg is assigned model mel
+HIT ISIC_0035486.jpg is assigned model mel
+HIT ISIC_0035505.jpg is assigned model mel
+ERROR ISIC_0035510.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035522.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035525.jpg is assigned Model akiec  True Model mel
+ERROR ISIC_0035550.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035558.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035561.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035562.jpg is assigned model mel
+ERROR ISIC_0035602.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035605.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035606.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035610.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035629.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035636.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035637.jpg is assigned model mel
+ERROR ISIC_0035640.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035651.jpg is assigned model mel
+HIT ISIC_0035653.jpg is assigned model mel
+ERROR ISIC_0035663.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035670.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035680.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035682.jpg is assigned model mel
+HIT ISIC_0035690.jpg is assigned model mel
+HIT ISIC_0035696.jpg is assigned model mel
+ERROR ISIC_0035698.jpg is assigned Model bcc  True Model mel
+ERROR ISIC_0035700.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035705.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035708.jpg is assigned model mel
+HIT ISIC_0035711.jpg is assigned model mel
+ERROR ISIC_0035714.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035719.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035720.jpg is assigned model mel
+HIT ISIC_0035721.jpg is assigned model mel
+HIT ISIC_0035732.jpg is assigned model mel
+HIT ISIC_0035736.jpg is assigned model mel
+ERROR ISIC_0035747.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035748.jpg is assigned model mel
+HIT ISIC_0035756.jpg is assigned model mel
+HIT ISIC_0035764.jpg is assigned model mel
+ERROR ISIC_0035766.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035767.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035789.jpg is assigned model mel
+ERROR ISIC_0035794.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035816.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035819.jpg is assigned model mel
+HIT ISIC_0035823.jpg is assigned model mel
+ERROR ISIC_0035825.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035826.jpg is assigned model mel
+HIT ISIC_0035827.jpg is assigned model mel
+HIT ISIC_0035845.jpg is assigned model mel
+HIT ISIC_0035846.jpg is assigned model mel
+ERROR ISIC_0035853.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035854.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035868.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035877.jpg is assigned model mel
+HIT ISIC_0035887.jpg is assigned model mel
+HIT ISIC_0035888.jpg is assigned model mel
+ERROR ISIC_0035889.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035894.jpg is assigned Model akiec  True Model mel
+HIT ISIC_0035900.jpg is assigned model mel
+ERROR ISIC_0035902.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0035911.jpg is assigned model mel
+HIT ISIC_0035913.jpg is assigned model mel
+HIT ISIC_0035914.jpg is assigned model mel
+HIT ISIC_0035920.jpg is assigned model mel
+HIT ISIC_0035922.jpg is assigned model mel
+HIT ISIC_0035923.jpg is assigned model mel
+ERROR ISIC_0035929.jpg is assigned Model bkl  True Model mel
+ERROR ISIC_0035934.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0035938.jpg is assigned Model bkl  True Model mel
+HIT ISIC_0035956.jpg is assigned model mel
+ERROR ISIC_0035964.jpg is assigned Model nv  True Model mel
+HIT ISIC_0035968.jpg is assigned model mel
+HIT ISIC_0035986.jpg is assigned model mel
+HIT ISIC_0035992.jpg is assigned model mel
+HIT ISIC_0035997.jpg is assigned model mel
+ERROR ISIC_0036005.jpg is assigned Model nv  True Model mel
+HIT ISIC_0036012.jpg is assigned model mel
+HIT ISIC_0036026.jpg is assigned model mel
+ERROR ISIC_0036029.jpg is assigned Model df  True Model mel
+ERROR ISIC_0036034.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0036051.jpg is assigned Model nv  True Model mel
+HIT ISIC_0036056.jpg is assigned model mel
+ERROR ISIC_0036057.jpg is assigned Model nv  True Model mel
+HIT ISIC_0034524.jpg is assigned model nv
+HIT ISIC_0034525.jpg is assigned model nv
+HIT ISIC_0034527.jpg is assigned model nv
+HIT ISIC_0034528.jpg is assigned model nv
+HIT ISIC_0034530.jpg is assigned model nv
+HIT ISIC_0034532.jpg is assigned model nv
+HIT ISIC_0034533.jpg is assigned model nv
+HIT ISIC_0034534.jpg is assigned model nv
+HIT ISIC_0034537.jpg is assigned model nv
+HIT ISIC_0034540.jpg is assigned model nv
+HIT ISIC_0034541.jpg is assigned model nv
+HIT ISIC_0034543.jpg is assigned model nv
+HIT ISIC_0034544.jpg is assigned model nv
+HIT ISIC_0034551.jpg is assigned model nv
+HIT ISIC_0034552.jpg is assigned model nv
+HIT ISIC_0034553.jpg is assigned model nv
+HIT ISIC_0034556.jpg is assigned model nv
+HIT ISIC_0034557.jpg is assigned model nv
+HIT ISIC_0034558.jpg is assigned model nv
+HIT ISIC_0034559.jpg is assigned model nv
+HIT ISIC_0034560.jpg is assigned model nv
+HIT ISIC_0034562.jpg is assigned model nv
+HIT ISIC_0034563.jpg is assigned model nv
+HIT ISIC_0034564.jpg is assigned model nv
+HIT ISIC_0034566.jpg is assigned model nv
+HIT ISIC_0034567.jpg is assigned model nv
+HIT ISIC_0034568.jpg is assigned model nv
+HIT ISIC_0034569.jpg is assigned model nv
+HIT ISIC_0034576.jpg is assigned model nv
+HIT ISIC_0034577.jpg is assigned model nv
+HIT ISIC_0034580.jpg is assigned model nv
+HIT ISIC_0034581.jpg is assigned model nv
+HIT ISIC_0034582.jpg is assigned model nv
+HIT ISIC_0034583.jpg is assigned model nv
+HIT ISIC_0034586.jpg is assigned model nv
+HIT ISIC_0034587.jpg is assigned model nv
+HIT ISIC_0034589.jpg is assigned model nv
+HIT ISIC_0034590.jpg is assigned model nv
+HIT ISIC_0034592.jpg is assigned model nv
+HIT ISIC_0034593.jpg is assigned model nv
+HIT ISIC_0034594.jpg is assigned model nv
+HIT ISIC_0034599.jpg is assigned model nv
+HIT ISIC_0034600.jpg is assigned model nv
+HIT ISIC_0034601.jpg is assigned model nv
+HIT ISIC_0034602.jpg is assigned model nv
+HIT ISIC_0034603.jpg is assigned model nv
+HIT ISIC_0034604.jpg is assigned model nv
+HIT ISIC_0034607.jpg is assigned model nv
+HIT ISIC_0034609.jpg is assigned model nv
+HIT ISIC_0034610.jpg is assigned model nv
+HIT ISIC_0034611.jpg is assigned model nv
+HIT ISIC_0034613.jpg is assigned model nv
+HIT ISIC_0034616.jpg is assigned model nv
+HIT ISIC_0034617.jpg is assigned model nv
+HIT ISIC_0034619.jpg is assigned model nv
+HIT ISIC_0034620.jpg is assigned model nv
+HIT ISIC_0034621.jpg is assigned model nv
+HIT ISIC_0034623.jpg is assigned model nv
+HIT ISIC_0034624.jpg is assigned model nv
+HIT ISIC_0034625.jpg is assigned model nv
+HIT ISIC_0034626.jpg is assigned model nv
+HIT ISIC_0034627.jpg is assigned model nv
+HIT ISIC_0034629.jpg is assigned model nv
+HIT ISIC_0034632.jpg is assigned model nv
+HIT ISIC_0034634.jpg is assigned model nv
+ERROR ISIC_0034635.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0034636.jpg is assigned model nv
+ERROR ISIC_0034637.jpg is assigned Model df  True Model nv
+HIT ISIC_0034639.jpg is assigned model nv
+HIT ISIC_0034640.jpg is assigned model nv
+HIT ISIC_0034641.jpg is assigned model nv
+HIT ISIC_0034643.jpg is assigned model nv
+HIT ISIC_0034645.jpg is assigned model nv
+HIT ISIC_0034648.jpg is assigned model nv
+HIT ISIC_0034649.jpg is assigned model nv
+HIT ISIC_0034653.jpg is assigned model nv
+HIT ISIC_0034654.jpg is assigned model nv
+HIT ISIC_0034658.jpg is assigned model nv
+HIT ISIC_0034659.jpg is assigned model nv
+HIT ISIC_0034660.jpg is assigned model nv
+HIT ISIC_0034661.jpg is assigned model nv
+HIT ISIC_0034662.jpg is assigned model nv
+HIT ISIC_0034664.jpg is assigned model nv
+HIT ISIC_0034665.jpg is assigned model nv
+HIT ISIC_0034667.jpg is assigned model nv
+HIT ISIC_0034668.jpg is assigned model nv
+HIT ISIC_0034670.jpg is assigned model nv
+HIT ISIC_0034671.jpg is assigned model nv
+HIT ISIC_0034672.jpg is assigned model nv
+HIT ISIC_0034674.jpg is assigned model nv
+HIT ISIC_0034676.jpg is assigned model nv
+HIT ISIC_0034677.jpg is assigned model nv
+HIT ISIC_0034678.jpg is assigned model nv
+HIT ISIC_0034680.jpg is assigned model nv
+HIT ISIC_0034681.jpg is assigned model nv
+HIT ISIC_0034683.jpg is assigned model nv
+HIT ISIC_0034688.jpg is assigned model nv
+HIT ISIC_0034689.jpg is assigned model nv
+HIT ISIC_0034690.jpg is assigned model nv
+HIT ISIC_0034696.jpg is assigned model nv
+HIT ISIC_0034697.jpg is assigned model nv
+HIT ISIC_0034698.jpg is assigned model nv
+HIT ISIC_0034700.jpg is assigned model nv
+HIT ISIC_0034701.jpg is assigned model nv
+HIT ISIC_0034702.jpg is assigned model nv
+HIT ISIC_0034703.jpg is assigned model nv
+HIT ISIC_0034704.jpg is assigned model nv
+HIT ISIC_0034705.jpg is assigned model nv
+HIT ISIC_0034707.jpg is assigned model nv
+HIT ISIC_0034708.jpg is assigned model nv
+HIT ISIC_0034709.jpg is assigned model nv
+HIT ISIC_0034715.jpg is assigned model nv
+HIT ISIC_0034716.jpg is assigned model nv
+HIT ISIC_0034717.jpg is assigned model nv
+HIT ISIC_0034718.jpg is assigned model nv
+HIT ISIC_0034721.jpg is assigned model nv
+HIT ISIC_0034722.jpg is assigned model nv
+HIT ISIC_0034725.jpg is assigned model nv
+HIT ISIC_0034726.jpg is assigned model nv
+HIT ISIC_0034727.jpg is assigned model nv
+HIT ISIC_0034728.jpg is assigned model nv
+HIT ISIC_0034729.jpg is assigned model nv
+HIT ISIC_0034730.jpg is assigned model nv
+ERROR ISIC_0034731.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0034732.jpg is assigned model nv
+HIT ISIC_0034735.jpg is assigned model nv
+HIT ISIC_0034736.jpg is assigned model nv
+HIT ISIC_0034738.jpg is assigned model nv
+HIT ISIC_0034740.jpg is assigned model nv
+HIT ISIC_0034741.jpg is assigned model nv
+HIT ISIC_0034742.jpg is assigned model nv
+HIT ISIC_0034743.jpg is assigned model nv
+HIT ISIC_0034744.jpg is assigned model nv
+HIT ISIC_0034745.jpg is assigned model nv
+HIT ISIC_0034747.jpg is assigned model nv
+HIT ISIC_0034749.jpg is assigned model nv
+HIT ISIC_0034752.jpg is assigned model nv
+HIT ISIC_0034754.jpg is assigned model nv
+HIT ISIC_0034756.jpg is assigned model nv
+HIT ISIC_0034757.jpg is assigned model nv
+HIT ISIC_0034761.jpg is assigned model nv
+HIT ISIC_0034762.jpg is assigned model nv
+HIT ISIC_0034763.jpg is assigned model nv
+HIT ISIC_0034765.jpg is assigned model nv
+HIT ISIC_0034767.jpg is assigned model nv
+HIT ISIC_0034768.jpg is assigned model nv
+HIT ISIC_0034769.jpg is assigned model nv
+HIT ISIC_0034772.jpg is assigned model nv
+HIT ISIC_0034773.jpg is assigned model nv
+HIT ISIC_0034774.jpg is assigned model nv
+HIT ISIC_0034776.jpg is assigned model nv
+HIT ISIC_0034777.jpg is assigned model nv
+HIT ISIC_0034778.jpg is assigned model nv
+HIT ISIC_0034779.jpg is assigned model nv
+HIT ISIC_0034780.jpg is assigned model nv
+HIT ISIC_0034781.jpg is assigned model nv
+HIT ISIC_0034783.jpg is assigned model nv
+HIT ISIC_0034786.jpg is assigned model nv
+HIT ISIC_0034787.jpg is assigned model nv
+HIT ISIC_0034788.jpg is assigned model nv
+HIT ISIC_0034789.jpg is assigned model nv
+HIT ISIC_0034790.jpg is assigned model nv
+HIT ISIC_0034791.jpg is assigned model nv
+HIT ISIC_0034792.jpg is assigned model nv
+ERROR ISIC_0034793.jpg is assigned Model akiec  True Model nv
+HIT ISIC_0034795.jpg is assigned model nv
+ERROR ISIC_0034797.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0034798.jpg is assigned model nv
+HIT ISIC_0034800.jpg is assigned model nv
+HIT ISIC_0034801.jpg is assigned model nv
+HIT ISIC_0034803.jpg is assigned model nv
+HIT ISIC_0034806.jpg is assigned model nv
+HIT ISIC_0034807.jpg is assigned model nv
+HIT ISIC_0034808.jpg is assigned model nv
+HIT ISIC_0034809.jpg is assigned model nv
+HIT ISIC_0034810.jpg is assigned model nv
+HIT ISIC_0034811.jpg is assigned model nv
+HIT ISIC_0034813.jpg is assigned model nv
+HIT ISIC_0034815.jpg is assigned model nv
+HIT ISIC_0034816.jpg is assigned model nv
+HIT ISIC_0034818.jpg is assigned model nv
+HIT ISIC_0034821.jpg is assigned model nv
+HIT ISIC_0034823.jpg is assigned model nv
+HIT ISIC_0034824.jpg is assigned model nv
+HIT ISIC_0034827.jpg is assigned model nv
+HIT ISIC_0034828.jpg is assigned model nv
+HIT ISIC_0034829.jpg is assigned model nv
+HIT ISIC_0034830.jpg is assigned model nv
+HIT ISIC_0034831.jpg is assigned model nv
+HIT ISIC_0034832.jpg is assigned model nv
+HIT ISIC_0034834.jpg is assigned model nv
+HIT ISIC_0034835.jpg is assigned model nv
+ERROR ISIC_0034836.jpg is assigned Model mel  True Model nv
+HIT ISIC_0034837.jpg is assigned model nv
+HIT ISIC_0034838.jpg is assigned model nv
+HIT ISIC_0034839.jpg is assigned model nv
+HIT ISIC_0034841.jpg is assigned model nv
+HIT ISIC_0034843.jpg is assigned model nv
+HIT ISIC_0034844.jpg is assigned model nv
+HIT ISIC_0034845.jpg is assigned model nv
+HIT ISIC_0034846.jpg is assigned model nv
+HIT ISIC_0034847.jpg is assigned model nv
+HIT ISIC_0034848.jpg is assigned model nv
+HIT ISIC_0034851.jpg is assigned model nv
+HIT ISIC_0034852.jpg is assigned model nv
+HIT ISIC_0034853.jpg is assigned model nv
+HIT ISIC_0034854.jpg is assigned model nv
+HIT ISIC_0034855.jpg is assigned model nv
+HIT ISIC_0034856.jpg is assigned model nv
+HIT ISIC_0034857.jpg is assigned model nv
+HIT ISIC_0034860.jpg is assigned model nv
+HIT ISIC_0034861.jpg is assigned model nv
+HIT ISIC_0034862.jpg is assigned model nv
+HIT ISIC_0034864.jpg is assigned model nv
+HIT ISIC_0034865.jpg is assigned model nv
+HIT ISIC_0034866.jpg is assigned model nv
+HIT ISIC_0034867.jpg is assigned model nv
+HIT ISIC_0034868.jpg is assigned model nv
+HIT ISIC_0034869.jpg is assigned model nv
+HIT ISIC_0034872.jpg is assigned model nv
+HIT ISIC_0034877.jpg is assigned model nv
+HIT ISIC_0034878.jpg is assigned model nv
+HIT ISIC_0034880.jpg is assigned model nv
+HIT ISIC_0034881.jpg is assigned model nv
+HIT ISIC_0034883.jpg is assigned model nv
+HIT ISIC_0034884.jpg is assigned model nv
+HIT ISIC_0034885.jpg is assigned model nv
+HIT ISIC_0034886.jpg is assigned model nv
+HIT ISIC_0034889.jpg is assigned model nv
+HIT ISIC_0034890.jpg is assigned model nv
+HIT ISIC_0034892.jpg is assigned model nv
+HIT ISIC_0034893.jpg is assigned model nv
+HIT ISIC_0034894.jpg is assigned model nv
+HIT ISIC_0034897.jpg is assigned model nv
+HIT ISIC_0034900.jpg is assigned model nv
+HIT ISIC_0034901.jpg is assigned model nv
+HIT ISIC_0034902.jpg is assigned model nv
+HIT ISIC_0034903.jpg is assigned model nv
+HIT ISIC_0034907.jpg is assigned model nv
+HIT ISIC_0034908.jpg is assigned model nv
+HIT ISIC_0034909.jpg is assigned model nv
+HIT ISIC_0034912.jpg is assigned model nv
+HIT ISIC_0034913.jpg is assigned model nv
+HIT ISIC_0034916.jpg is assigned model nv
+HIT ISIC_0034917.jpg is assigned model nv
+HIT ISIC_0034919.jpg is assigned model nv
+HIT ISIC_0034920.jpg is assigned model nv
+ERROR ISIC_0034921.jpg is assigned Model mel  True Model nv
+HIT ISIC_0034922.jpg is assigned model nv
+HIT ISIC_0034923.jpg is assigned model nv
+HIT ISIC_0034924.jpg is assigned model nv
+HIT ISIC_0034925.jpg is assigned model nv
+ERROR ISIC_0034927.jpg is assigned Model mel  True Model nv
+HIT ISIC_0034928.jpg is assigned model nv
+HIT ISIC_0034932.jpg is assigned model nv
+HIT ISIC_0034933.jpg is assigned model nv
+HIT ISIC_0034935.jpg is assigned model nv
+HIT ISIC_0034938.jpg is assigned model nv
+HIT ISIC_0034940.jpg is assigned model nv
+HIT ISIC_0034941.jpg is assigned model nv
+HIT ISIC_0034942.jpg is assigned model nv
+HIT ISIC_0034943.jpg is assigned model nv
+HIT ISIC_0034944.jpg is assigned model nv
+HIT ISIC_0034945.jpg is assigned model nv
+HIT ISIC_0034947.jpg is assigned model nv
+HIT ISIC_0034950.jpg is assigned model nv
+HIT ISIC_0034955.jpg is assigned model nv
+HIT ISIC_0034956.jpg is assigned model nv
+HIT ISIC_0034962.jpg is assigned model nv
+HIT ISIC_0034964.jpg is assigned model nv
+HIT ISIC_0034965.jpg is assigned model nv
+ERROR ISIC_0034967.jpg is assigned Model mel  True Model nv
+HIT ISIC_0034968.jpg is assigned model nv
+HIT ISIC_0034973.jpg is assigned model nv
+HIT ISIC_0034974.jpg is assigned model nv
+HIT ISIC_0034975.jpg is assigned model nv
+HIT ISIC_0034976.jpg is assigned model nv
+HIT ISIC_0034977.jpg is assigned model nv
+HIT ISIC_0034978.jpg is assigned model nv
+HIT ISIC_0034979.jpg is assigned model nv
+HIT ISIC_0034983.jpg is assigned model nv
+HIT ISIC_0034984.jpg is assigned model nv
+HIT ISIC_0034985.jpg is assigned model nv
+HIT ISIC_0034986.jpg is assigned model nv
+HIT ISIC_0034989.jpg is assigned model nv
+HIT ISIC_0034990.jpg is assigned model nv
+HIT ISIC_0034991.jpg is assigned model nv
+HIT ISIC_0034992.jpg is assigned model nv
+HIT ISIC_0034996.jpg is assigned model nv
+HIT ISIC_0035002.jpg is assigned model nv
+HIT ISIC_0035003.jpg is assigned model nv
+HIT ISIC_0035005.jpg is assigned model nv
+HIT ISIC_0035006.jpg is assigned model nv
+HIT ISIC_0035007.jpg is assigned model nv
+HIT ISIC_0035009.jpg is assigned model nv
+HIT ISIC_0035011.jpg is assigned model nv
+HIT ISIC_0035013.jpg is assigned model nv
+HIT ISIC_0035014.jpg is assigned model nv
+HIT ISIC_0035015.jpg is assigned model nv
+HIT ISIC_0035016.jpg is assigned model nv
+HIT ISIC_0035017.jpg is assigned model nv
+HIT ISIC_0035019.jpg is assigned model nv
+HIT ISIC_0035020.jpg is assigned model nv
+HIT ISIC_0035022.jpg is assigned model nv
+HIT ISIC_0035023.jpg is assigned model nv
+HIT ISIC_0035024.jpg is assigned model nv
+HIT ISIC_0035025.jpg is assigned model nv
+HIT ISIC_0035027.jpg is assigned model nv
+HIT ISIC_0035030.jpg is assigned model nv
+HIT ISIC_0035031.jpg is assigned model nv
+HIT ISIC_0035034.jpg is assigned model nv
+HIT ISIC_0035036.jpg is assigned model nv
+HIT ISIC_0035038.jpg is assigned model nv
+ERROR ISIC_0035044.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035045.jpg is assigned model nv
+HIT ISIC_0035046.jpg is assigned model nv
+HIT ISIC_0035049.jpg is assigned model nv
+ERROR ISIC_0035050.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035051.jpg is assigned model nv
+HIT ISIC_0035052.jpg is assigned model nv
+HIT ISIC_0035053.jpg is assigned model nv
+HIT ISIC_0035055.jpg is assigned model nv
+HIT ISIC_0035056.jpg is assigned model nv
+HIT ISIC_0035058.jpg is assigned model nv
+HIT ISIC_0035059.jpg is assigned model nv
+HIT ISIC_0035060.jpg is assigned model nv
+HIT ISIC_0035061.jpg is assigned model nv
+HIT ISIC_0035062.jpg is assigned model nv
+HIT ISIC_0035063.jpg is assigned model nv
+HIT ISIC_0035065.jpg is assigned model nv
+HIT ISIC_0035066.jpg is assigned model nv
+HIT ISIC_0035067.jpg is assigned model nv
+HIT ISIC_0035071.jpg is assigned model nv
+ERROR ISIC_0035073.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035074.jpg is assigned model nv
+HIT ISIC_0035077.jpg is assigned model nv
+HIT ISIC_0035079.jpg is assigned model nv
+HIT ISIC_0035080.jpg is assigned model nv
+HIT ISIC_0035082.jpg is assigned model nv
+HIT ISIC_0035083.jpg is assigned model nv
+HIT ISIC_0035084.jpg is assigned model nv
+HIT ISIC_0035085.jpg is assigned model nv
+HIT ISIC_0035086.jpg is assigned model nv
+HIT ISIC_0035087.jpg is assigned model nv
+HIT ISIC_0035088.jpg is assigned model nv
+HIT ISIC_0035091.jpg is assigned model nv
+HIT ISIC_0035092.jpg is assigned model nv
+HIT ISIC_0035093.jpg is assigned model nv
+HIT ISIC_0035094.jpg is assigned model nv
+HIT ISIC_0035096.jpg is assigned model nv
+HIT ISIC_0035097.jpg is assigned model nv
+HIT ISIC_0035098.jpg is assigned model nv
+HIT ISIC_0035100.jpg is assigned model nv
+HIT ISIC_0035101.jpg is assigned model nv
+HIT ISIC_0035102.jpg is assigned model nv
+HIT ISIC_0035103.jpg is assigned model nv
+HIT ISIC_0035105.jpg is assigned model nv
+HIT ISIC_0035107.jpg is assigned model nv
+HIT ISIC_0035108.jpg is assigned model nv
+HIT ISIC_0035111.jpg is assigned model nv
+HIT ISIC_0035113.jpg is assigned model nv
+HIT ISIC_0035114.jpg is assigned model nv
+ERROR ISIC_0035116.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035118.jpg is assigned model nv
+HIT ISIC_0035121.jpg is assigned model nv
+HIT ISIC_0035122.jpg is assigned model nv
+HIT ISIC_0035123.jpg is assigned model nv
+HIT ISIC_0035126.jpg is assigned model nv
+HIT ISIC_0035129.jpg is assigned model nv
+HIT ISIC_0035132.jpg is assigned model nv
+HIT ISIC_0035133.jpg is assigned model nv
+HIT ISIC_0035134.jpg is assigned model nv
+HIT ISIC_0035135.jpg is assigned model nv
+HIT ISIC_0035137.jpg is assigned model nv
+HIT ISIC_0035138.jpg is assigned model nv
+HIT ISIC_0035140.jpg is assigned model nv
+HIT ISIC_0035143.jpg is assigned model nv
+HIT ISIC_0035144.jpg is assigned model nv
+HIT ISIC_0035145.jpg is assigned model nv
+HIT ISIC_0035146.jpg is assigned model nv
+HIT ISIC_0035148.jpg is assigned model nv
+ERROR ISIC_0035150.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035152.jpg is assigned model nv
+HIT ISIC_0035153.jpg is assigned model nv
+HIT ISIC_0035156.jpg is assigned model nv
+HIT ISIC_0035157.jpg is assigned model nv
+HIT ISIC_0035158.jpg is assigned model nv
+HIT ISIC_0035160.jpg is assigned model nv
+HIT ISIC_0035161.jpg is assigned model nv
+HIT ISIC_0035162.jpg is assigned model nv
+HIT ISIC_0035164.jpg is assigned model nv
+HIT ISIC_0035165.jpg is assigned model nv
+HIT ISIC_0035166.jpg is assigned model nv
+HIT ISIC_0035167.jpg is assigned model nv
+HIT ISIC_0035169.jpg is assigned model nv
+HIT ISIC_0035170.jpg is assigned model nv
+HIT ISIC_0035172.jpg is assigned model nv
+HIT ISIC_0035173.jpg is assigned model nv
+HIT ISIC_0035175.jpg is assigned model nv
+HIT ISIC_0035176.jpg is assigned model nv
+ERROR ISIC_0035178.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035181.jpg is assigned model nv
+HIT ISIC_0035182.jpg is assigned model nv
+HIT ISIC_0035184.jpg is assigned model nv
+ERROR ISIC_0035186.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0035187.jpg is assigned model nv
+HIT ISIC_0035188.jpg is assigned model nv
+ERROR ISIC_0035189.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035191.jpg is assigned model nv
+HIT ISIC_0035192.jpg is assigned model nv
+HIT ISIC_0035193.jpg is assigned model nv
+HIT ISIC_0035195.jpg is assigned model nv
+HIT ISIC_0035197.jpg is assigned model nv
+HIT ISIC_0035198.jpg is assigned model nv
+ERROR ISIC_0035199.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035200.jpg is assigned model nv
+HIT ISIC_0035201.jpg is assigned model nv
+HIT ISIC_0035204.jpg is assigned model nv
+HIT ISIC_0035205.jpg is assigned model nv
+HIT ISIC_0035208.jpg is assigned model nv
+HIT ISIC_0035209.jpg is assigned model nv
+HIT ISIC_0035211.jpg is assigned model nv
+HIT ISIC_0035213.jpg is assigned model nv
+HIT ISIC_0035214.jpg is assigned model nv
+HIT ISIC_0035215.jpg is assigned model nv
+HIT ISIC_0035217.jpg is assigned model nv
+HIT ISIC_0035219.jpg is assigned model nv
+HIT ISIC_0035220.jpg is assigned model nv
+HIT ISIC_0035221.jpg is assigned model nv
+HIT ISIC_0035222.jpg is assigned model nv
+HIT ISIC_0035223.jpg is assigned model nv
+HIT ISIC_0035225.jpg is assigned model nv
+HIT ISIC_0035227.jpg is assigned model nv
+HIT ISIC_0035228.jpg is assigned model nv
+HIT ISIC_0035230.jpg is assigned model nv
+HIT ISIC_0035231.jpg is assigned model nv
+HIT ISIC_0035233.jpg is assigned model nv
+HIT ISIC_0035234.jpg is assigned model nv
+HIT ISIC_0035235.jpg is assigned model nv
+HIT ISIC_0035236.jpg is assigned model nv
+HIT ISIC_0035237.jpg is assigned model nv
+HIT ISIC_0035238.jpg is assigned model nv
+HIT ISIC_0035241.jpg is assigned model nv
+HIT ISIC_0035242.jpg is assigned model nv
+HIT ISIC_0035244.jpg is assigned model nv
+ERROR ISIC_0035245.jpg is assigned Model bkl  True Model nv
+ERROR ISIC_0035246.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035250.jpg is assigned model nv
+HIT ISIC_0035253.jpg is assigned model nv
+HIT ISIC_0035255.jpg is assigned model nv
+HIT ISIC_0035256.jpg is assigned model nv
+HIT ISIC_0035257.jpg is assigned model nv
+HIT ISIC_0035260.jpg is assigned model nv
+HIT ISIC_0035265.jpg is assigned model nv
+HIT ISIC_0035266.jpg is assigned model nv
+ERROR ISIC_0035267.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035268.jpg is assigned model nv
+HIT ISIC_0035272.jpg is assigned model nv
+HIT ISIC_0035273.jpg is assigned model nv
+HIT ISIC_0035274.jpg is assigned model nv
+HIT ISIC_0035275.jpg is assigned model nv
+HIT ISIC_0035278.jpg is assigned model nv
+HIT ISIC_0035281.jpg is assigned model nv
+HIT ISIC_0035282.jpg is assigned model nv
+HIT ISIC_0035283.jpg is assigned model nv
+HIT ISIC_0035285.jpg is assigned model nv
+HIT ISIC_0035286.jpg is assigned model nv
+HIT ISIC_0035288.jpg is assigned model nv
+HIT ISIC_0035289.jpg is assigned model nv
+ERROR ISIC_0035290.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035292.jpg is assigned model nv
+HIT ISIC_0035294.jpg is assigned model nv
+HIT ISIC_0035295.jpg is assigned model nv
+ERROR ISIC_0035296.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035297.jpg is assigned model nv
+HIT ISIC_0035298.jpg is assigned model nv
+HIT ISIC_0035299.jpg is assigned model nv
+HIT ISIC_0035300.jpg is assigned model nv
+ERROR ISIC_0035301.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035302.jpg is assigned model nv
+HIT ISIC_0035303.jpg is assigned model nv
+HIT ISIC_0035304.jpg is assigned model nv
+HIT ISIC_0035307.jpg is assigned model nv
+HIT ISIC_0035309.jpg is assigned model nv
+HIT ISIC_0035311.jpg is assigned model nv
+HIT ISIC_0035312.jpg is assigned model nv
+HIT ISIC_0035314.jpg is assigned model nv
+HIT ISIC_0035315.jpg is assigned model nv
+HIT ISIC_0035319.jpg is assigned model nv
+HIT ISIC_0035320.jpg is assigned model nv
+HIT ISIC_0035323.jpg is assigned model nv
+ERROR ISIC_0035324.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035325.jpg is assigned model nv
+HIT ISIC_0035327.jpg is assigned model nv
+HIT ISIC_0035328.jpg is assigned model nv
+HIT ISIC_0035329.jpg is assigned model nv
+HIT ISIC_0035333.jpg is assigned model nv
+HIT ISIC_0035335.jpg is assigned model nv
+HIT ISIC_0035336.jpg is assigned model nv
+HIT ISIC_0035337.jpg is assigned model nv
+HIT ISIC_0035339.jpg is assigned model nv
+HIT ISIC_0035341.jpg is assigned model nv
+HIT ISIC_0035342.jpg is assigned model nv
+HIT ISIC_0035343.jpg is assigned model nv
+HIT ISIC_0035344.jpg is assigned model nv
+HIT ISIC_0035346.jpg is assigned model nv
+HIT ISIC_0035347.jpg is assigned model nv
+HIT ISIC_0035349.jpg is assigned model nv
+HIT ISIC_0035350.jpg is assigned model nv
+HIT ISIC_0035352.jpg is assigned model nv
+HIT ISIC_0035353.jpg is assigned model nv
+HIT ISIC_0035354.jpg is assigned model nv
+HIT ISIC_0035356.jpg is assigned model nv
+HIT ISIC_0035358.jpg is assigned model nv
+HIT ISIC_0035359.jpg is assigned model nv
+HIT ISIC_0035361.jpg is assigned model nv
+HIT ISIC_0035363.jpg is assigned model nv
+HIT ISIC_0035365.jpg is assigned model nv
+HIT ISIC_0035367.jpg is assigned model nv
+HIT ISIC_0035369.jpg is assigned model nv
+ERROR ISIC_0035370.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035373.jpg is assigned model nv
+HIT ISIC_0035375.jpg is assigned model nv
+HIT ISIC_0035377.jpg is assigned model nv
+HIT ISIC_0035378.jpg is assigned model nv
+HIT ISIC_0035379.jpg is assigned model nv
+HIT ISIC_0035380.jpg is assigned model nv
+HIT ISIC_0035381.jpg is assigned model nv
+HIT ISIC_0035382.jpg is assigned model nv
+HIT ISIC_0035383.jpg is assigned model nv
+HIT ISIC_0035384.jpg is assigned model nv
+HIT ISIC_0035385.jpg is assigned model nv
+HIT ISIC_0035386.jpg is assigned model nv
+ERROR ISIC_0035387.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035390.jpg is assigned model nv
+HIT ISIC_0035392.jpg is assigned model nv
+HIT ISIC_0035394.jpg is assigned model nv
+HIT ISIC_0035395.jpg is assigned model nv
+HIT ISIC_0035396.jpg is assigned model nv
+ERROR ISIC_0035398.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0035399.jpg is assigned model nv
+HIT ISIC_0035400.jpg is assigned model nv
+HIT ISIC_0035401.jpg is assigned model nv
+HIT ISIC_0035402.jpg is assigned model nv
+HIT ISIC_0035404.jpg is assigned model nv
+HIT ISIC_0035405.jpg is assigned model nv
+HIT ISIC_0035407.jpg is assigned model nv
+HIT ISIC_0035408.jpg is assigned model nv
+HIT ISIC_0035409.jpg is assigned model nv
+HIT ISIC_0035410.jpg is assigned model nv
+HIT ISIC_0035411.jpg is assigned model nv
+HIT ISIC_0035412.jpg is assigned model nv
+HIT ISIC_0035413.jpg is assigned model nv
+HIT ISIC_0035417.jpg is assigned model nv
+HIT ISIC_0035418.jpg is assigned model nv
+HIT ISIC_0035419.jpg is assigned model nv
+HIT ISIC_0035422.jpg is assigned model nv
+ERROR ISIC_0035423.jpg is assigned Model bkl  True Model nv
+ERROR ISIC_0035425.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035427.jpg is assigned model nv
+HIT ISIC_0035428.jpg is assigned model nv
+HIT ISIC_0035429.jpg is assigned model nv
+HIT ISIC_0035431.jpg is assigned model nv
+HIT ISIC_0035433.jpg is assigned model nv
+HIT ISIC_0035435.jpg is assigned model nv
+HIT ISIC_0035437.jpg is assigned model nv
+HIT ISIC_0035438.jpg is assigned model nv
+HIT ISIC_0035441.jpg is assigned model nv
+ERROR ISIC_0035442.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035444.jpg is assigned model nv
+HIT ISIC_0035445.jpg is assigned model nv
+HIT ISIC_0035447.jpg is assigned model nv
+HIT ISIC_0035448.jpg is assigned model nv
+ERROR ISIC_0035449.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035452.jpg is assigned model nv
+HIT ISIC_0035453.jpg is assigned model nv
+HIT ISIC_0035455.jpg is assigned model nv
+HIT ISIC_0035456.jpg is assigned model nv
+ERROR ISIC_0035457.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035458.jpg is assigned model nv
+HIT ISIC_0035461.jpg is assigned model nv
+ERROR ISIC_0035465.jpg is assigned Model akiec  True Model nv
+HIT ISIC_0035467.jpg is assigned model nv
+HIT ISIC_0035469.jpg is assigned model nv
+HIT ISIC_0035470.jpg is assigned model nv
+HIT ISIC_0035473.jpg is assigned model nv
+HIT ISIC_0035474.jpg is assigned model nv
+HIT ISIC_0035476.jpg is assigned model nv
+HIT ISIC_0035477.jpg is assigned model nv
+HIT ISIC_0035479.jpg is assigned model nv
+HIT ISIC_0035480.jpg is assigned model nv
+HIT ISIC_0035481.jpg is assigned model nv
+HIT ISIC_0035482.jpg is assigned model nv
+HIT ISIC_0035483.jpg is assigned model nv
+HIT ISIC_0035484.jpg is assigned model nv
+HIT ISIC_0035485.jpg is assigned model nv
+HIT ISIC_0035488.jpg is assigned model nv
+HIT ISIC_0035489.jpg is assigned model nv
+HIT ISIC_0035491.jpg is assigned model nv
+HIT ISIC_0035492.jpg is assigned model nv
+HIT ISIC_0035493.jpg is assigned model nv
+HIT ISIC_0035494.jpg is assigned model nv
+HIT ISIC_0035495.jpg is assigned model nv
+HIT ISIC_0035496.jpg is assigned model nv
+HIT ISIC_0035497.jpg is assigned model nv
+HIT ISIC_0035498.jpg is assigned model nv
+HIT ISIC_0035499.jpg is assigned model nv
+HIT ISIC_0035500.jpg is assigned model nv
+HIT ISIC_0035501.jpg is assigned model nv
+HIT ISIC_0035503.jpg is assigned model nv
+HIT ISIC_0035506.jpg is assigned model nv
+HIT ISIC_0035507.jpg is assigned model nv
+HIT ISIC_0035508.jpg is assigned model nv
+ERROR ISIC_0035509.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035512.jpg is assigned model nv
+HIT ISIC_0035513.jpg is assigned model nv
+HIT ISIC_0035515.jpg is assigned model nv
+HIT ISIC_0035516.jpg is assigned model nv
+HIT ISIC_0035518.jpg is assigned model nv
+HIT ISIC_0035519.jpg is assigned model nv
+HIT ISIC_0035520.jpg is assigned model nv
+HIT ISIC_0035521.jpg is assigned model nv
+HIT ISIC_0035523.jpg is assigned model nv
+HIT ISIC_0035524.jpg is assigned model nv
+HIT ISIC_0035526.jpg is assigned model nv
+HIT ISIC_0035527.jpg is assigned model nv
+HIT ISIC_0035528.jpg is assigned model nv
+HIT ISIC_0035529.jpg is assigned model nv
+HIT ISIC_0035530.jpg is assigned model nv
+HIT ISIC_0035531.jpg is assigned model nv
+HIT ISIC_0035532.jpg is assigned model nv
+HIT ISIC_0035534.jpg is assigned model nv
+ERROR ISIC_0035535.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035536.jpg is assigned model nv
+HIT ISIC_0035537.jpg is assigned model nv
+HIT ISIC_0035539.jpg is assigned model nv
+HIT ISIC_0035540.jpg is assigned model nv
+HIT ISIC_0035541.jpg is assigned model nv
+HIT ISIC_0035542.jpg is assigned model nv
+HIT ISIC_0035543.jpg is assigned model nv
+HIT ISIC_0035544.jpg is assigned model nv
+HIT ISIC_0035545.jpg is assigned model nv
+HIT ISIC_0035546.jpg is assigned model nv
+HIT ISIC_0035548.jpg is assigned model nv
+HIT ISIC_0035551.jpg is assigned model nv
+ERROR ISIC_0035554.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035555.jpg is assigned model nv
+HIT ISIC_0035557.jpg is assigned model nv
+HIT ISIC_0035559.jpg is assigned model nv
+HIT ISIC_0035560.jpg is assigned model nv
+HIT ISIC_0035563.jpg is assigned model nv
+HIT ISIC_0035565.jpg is assigned model nv
+HIT ISIC_0035566.jpg is assigned model nv
+HIT ISIC_0035567.jpg is assigned model nv
+HIT ISIC_0035568.jpg is assigned model nv
+HIT ISIC_0035569.jpg is assigned model nv
+HIT ISIC_0035571.jpg is assigned model nv
+HIT ISIC_0035572.jpg is assigned model nv
+HIT ISIC_0035573.jpg is assigned model nv
+ERROR ISIC_0035574.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035575.jpg is assigned model nv
+HIT ISIC_0035576.jpg is assigned model nv
+HIT ISIC_0035577.jpg is assigned model nv
+HIT ISIC_0035578.jpg is assigned model nv
+HIT ISIC_0035579.jpg is assigned model nv
+HIT ISIC_0035580.jpg is assigned model nv
+HIT ISIC_0035581.jpg is assigned model nv
+HIT ISIC_0035582.jpg is assigned model nv
+HIT ISIC_0035583.jpg is assigned model nv
+HIT ISIC_0035587.jpg is assigned model nv
+HIT ISIC_0035591.jpg is assigned model nv
+HIT ISIC_0035592.jpg is assigned model nv
+HIT ISIC_0035596.jpg is assigned model nv
+HIT ISIC_0035597.jpg is assigned model nv
+HIT ISIC_0035598.jpg is assigned model nv
+HIT ISIC_0035600.jpg is assigned model nv
+HIT ISIC_0035601.jpg is assigned model nv
+HIT ISIC_0035604.jpg is assigned model nv
+HIT ISIC_0035609.jpg is assigned model nv
+HIT ISIC_0035611.jpg is assigned model nv
+HIT ISIC_0035614.jpg is assigned model nv
+HIT ISIC_0035615.jpg is assigned model nv
+HIT ISIC_0035616.jpg is assigned model nv
+HIT ISIC_0035617.jpg is assigned model nv
+HIT ISIC_0035618.jpg is assigned model nv
+HIT ISIC_0035621.jpg is assigned model nv
+HIT ISIC_0035623.jpg is assigned model nv
+HIT ISIC_0035628.jpg is assigned model nv
+HIT ISIC_0035632.jpg is assigned model nv
+HIT ISIC_0035638.jpg is assigned model nv
+HIT ISIC_0035639.jpg is assigned model nv
+HIT ISIC_0035641.jpg is assigned model nv
+HIT ISIC_0035644.jpg is assigned model nv
+HIT ISIC_0035646.jpg is assigned model nv
+HIT ISIC_0035647.jpg is assigned model nv
+HIT ISIC_0035648.jpg is assigned model nv
+HIT ISIC_0035649.jpg is assigned model nv
+HIT ISIC_0035652.jpg is assigned model nv
+HIT ISIC_0035654.jpg is assigned model nv
+HIT ISIC_0035656.jpg is assigned model nv
+HIT ISIC_0035657.jpg is assigned model nv
+HIT ISIC_0035659.jpg is assigned model nv
+HIT ISIC_0035662.jpg is assigned model nv
+HIT ISIC_0035665.jpg is assigned model nv
+HIT ISIC_0035666.jpg is assigned model nv
+HIT ISIC_0035668.jpg is assigned model nv
+HIT ISIC_0035671.jpg is assigned model nv
+HIT ISIC_0035672.jpg is assigned model nv
+HIT ISIC_0035673.jpg is assigned model nv
+HIT ISIC_0035674.jpg is assigned model nv
+HIT ISIC_0035678.jpg is assigned model nv
+HIT ISIC_0035681.jpg is assigned model nv
+HIT ISIC_0035684.jpg is assigned model nv
+ERROR ISIC_0035686.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035687.jpg is assigned model nv
+ERROR ISIC_0035688.jpg is assigned Model bkl  True Model nv
+ERROR ISIC_0035689.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035693.jpg is assigned model nv
+HIT ISIC_0035697.jpg is assigned model nv
+HIT ISIC_0035699.jpg is assigned model nv
+HIT ISIC_0035702.jpg is assigned model nv
+HIT ISIC_0035703.jpg is assigned model nv
+HIT ISIC_0035704.jpg is assigned model nv
+HIT ISIC_0035706.jpg is assigned model nv
+HIT ISIC_0035707.jpg is assigned model nv
+HIT ISIC_0035709.jpg is assigned model nv
+HIT ISIC_0035710.jpg is assigned model nv
+HIT ISIC_0035712.jpg is assigned model nv
+HIT ISIC_0035713.jpg is assigned model nv
+HIT ISIC_0035716.jpg is assigned model nv
+ERROR ISIC_0035717.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0035722.jpg is assigned model nv
+HIT ISIC_0035725.jpg is assigned model nv
+HIT ISIC_0035726.jpg is assigned model nv
+HIT ISIC_0035727.jpg is assigned model nv
+HIT ISIC_0035728.jpg is assigned model nv
+HIT ISIC_0035731.jpg is assigned model nv
+HIT ISIC_0035734.jpg is assigned model nv
+HIT ISIC_0035738.jpg is assigned model nv
+HIT ISIC_0035740.jpg is assigned model nv
+HIT ISIC_0035742.jpg is assigned model nv
+HIT ISIC_0035743.jpg is assigned model nv
+HIT ISIC_0035745.jpg is assigned model nv
+HIT ISIC_0035746.jpg is assigned model nv
+HIT ISIC_0035749.jpg is assigned model nv
+HIT ISIC_0035757.jpg is assigned model nv
+HIT ISIC_0035758.jpg is assigned model nv
+HIT ISIC_0035760.jpg is assigned model nv
+HIT ISIC_0035762.jpg is assigned model nv
+ERROR ISIC_0035769.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035770.jpg is assigned model nv
+HIT ISIC_0035771.jpg is assigned model nv
+HIT ISIC_0035773.jpg is assigned model nv
+HIT ISIC_0035774.jpg is assigned model nv
+HIT ISIC_0035775.jpg is assigned model nv
+HIT ISIC_0035777.jpg is assigned model nv
+HIT ISIC_0035779.jpg is assigned model nv
+HIT ISIC_0035780.jpg is assigned model nv
+HIT ISIC_0035781.jpg is assigned model nv
+HIT ISIC_0035782.jpg is assigned model nv
+HIT ISIC_0035783.jpg is assigned model nv
+HIT ISIC_0035784.jpg is assigned model nv
+HIT ISIC_0035785.jpg is assigned model nv
+HIT ISIC_0035786.jpg is assigned model nv
+HIT ISIC_0035788.jpg is assigned model nv
+HIT ISIC_0035791.jpg is assigned model nv
+HIT ISIC_0035792.jpg is assigned model nv
+HIT ISIC_0035793.jpg is assigned model nv
+HIT ISIC_0035795.jpg is assigned model nv
+HIT ISIC_0035796.jpg is assigned model nv
+HIT ISIC_0035797.jpg is assigned model nv
+HIT ISIC_0035798.jpg is assigned model nv
+HIT ISIC_0035800.jpg is assigned model nv
+HIT ISIC_0035801.jpg is assigned model nv
+HIT ISIC_0035803.jpg is assigned model nv
+HIT ISIC_0035804.jpg is assigned model nv
+ERROR ISIC_0035806.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0035808.jpg is assigned model nv
+HIT ISIC_0035809.jpg is assigned model nv
+ERROR ISIC_0035811.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035812.jpg is assigned model nv
+HIT ISIC_0035813.jpg is assigned model nv
+HIT ISIC_0035815.jpg is assigned model nv
+HIT ISIC_0035817.jpg is assigned model nv
+HIT ISIC_0035820.jpg is assigned model nv
+ERROR ISIC_0035822.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035828.jpg is assigned model nv
+HIT ISIC_0035830.jpg is assigned model nv
+HIT ISIC_0035832.jpg is assigned model nv
+HIT ISIC_0035835.jpg is assigned model nv
+HIT ISIC_0035836.jpg is assigned model nv
+HIT ISIC_0035837.jpg is assigned model nv
+HIT ISIC_0035838.jpg is assigned model nv
+HIT ISIC_0035839.jpg is assigned model nv
+HIT ISIC_0035840.jpg is assigned model nv
+HIT ISIC_0035841.jpg is assigned model nv
+HIT ISIC_0035843.jpg is assigned model nv
+HIT ISIC_0035849.jpg is assigned model nv
+HIT ISIC_0035850.jpg is assigned model nv
+HIT ISIC_0035851.jpg is assigned model nv
+HIT ISIC_0035856.jpg is assigned model nv
+HIT ISIC_0035857.jpg is assigned model nv
+HIT ISIC_0035858.jpg is assigned model nv
+HIT ISIC_0035859.jpg is assigned model nv
+HIT ISIC_0035860.jpg is assigned model nv
+HIT ISIC_0035861.jpg is assigned model nv
+HIT ISIC_0035862.jpg is assigned model nv
+HIT ISIC_0035864.jpg is assigned model nv
+HIT ISIC_0035867.jpg is assigned model nv
+HIT ISIC_0035869.jpg is assigned model nv
+HIT ISIC_0035870.jpg is assigned model nv
+HIT ISIC_0035872.jpg is assigned model nv
+ERROR ISIC_0035874.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0035875.jpg is assigned model nv
+ERROR ISIC_0035879.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035880.jpg is assigned model nv
+HIT ISIC_0035883.jpg is assigned model nv
+HIT ISIC_0035884.jpg is assigned model nv
+HIT ISIC_0035885.jpg is assigned model nv
+HIT ISIC_0035886.jpg is assigned model nv
+HIT ISIC_0035891.jpg is assigned model nv
+HIT ISIC_0035892.jpg is assigned model nv
+HIT ISIC_0035893.jpg is assigned model nv
+HIT ISIC_0035895.jpg is assigned model nv
+HIT ISIC_0035896.jpg is assigned model nv
+HIT ISIC_0035897.jpg is assigned model nv
+HIT ISIC_0035898.jpg is assigned model nv
+HIT ISIC_0035903.jpg is assigned model nv
+HIT ISIC_0035906.jpg is assigned model nv
+HIT ISIC_0035907.jpg is assigned model nv
+HIT ISIC_0035909.jpg is assigned model nv
+HIT ISIC_0035912.jpg is assigned model nv
+HIT ISIC_0035916.jpg is assigned model nv
+HIT ISIC_0035921.jpg is assigned model nv
+HIT ISIC_0035924.jpg is assigned model nv
+HIT ISIC_0035927.jpg is assigned model nv
+HIT ISIC_0035928.jpg is assigned model nv
+HIT ISIC_0035930.jpg is assigned model nv
+ERROR ISIC_0035935.jpg is assigned Model mel  True Model nv
+HIT ISIC_0035936.jpg is assigned model nv
+HIT ISIC_0035939.jpg is assigned model nv
+HIT ISIC_0035941.jpg is assigned model nv
+HIT ISIC_0035943.jpg is assigned model nv
+HIT ISIC_0035945.jpg is assigned model nv
+HIT ISIC_0035947.jpg is assigned model nv
+HIT ISIC_0035948.jpg is assigned model nv
+HIT ISIC_0035951.jpg is assigned model nv
+HIT ISIC_0035954.jpg is assigned model nv
+HIT ISIC_0035958.jpg is assigned model nv
+HIT ISIC_0035961.jpg is assigned model nv
+HIT ISIC_0035962.jpg is assigned model nv
+HIT ISIC_0035963.jpg is assigned model nv
+HIT ISIC_0035965.jpg is assigned model nv
+HIT ISIC_0035966.jpg is assigned model nv
+HIT ISIC_0035967.jpg is assigned model nv
+HIT ISIC_0035969.jpg is assigned model nv
+HIT ISIC_0035970.jpg is assigned model nv
+HIT ISIC_0035971.jpg is assigned model nv
+HIT ISIC_0035972.jpg is assigned model nv
+HIT ISIC_0035973.jpg is assigned model nv
+HIT ISIC_0035974.jpg is assigned model nv
+HIT ISIC_0035975.jpg is assigned model nv
+HIT ISIC_0035978.jpg is assigned model nv
+HIT ISIC_0035979.jpg is assigned model nv
+HIT ISIC_0035980.jpg is assigned model nv
+HIT ISIC_0035981.jpg is assigned model nv
+HIT ISIC_0035983.jpg is assigned model nv
+HIT ISIC_0035984.jpg is assigned model nv
+HIT ISIC_0035985.jpg is assigned model nv
+HIT ISIC_0035987.jpg is assigned model nv
+HIT ISIC_0035988.jpg is assigned model nv
+HIT ISIC_0035989.jpg is assigned model nv
+HIT ISIC_0035990.jpg is assigned model nv
+HIT ISIC_0035991.jpg is assigned model nv
+HIT ISIC_0035994.jpg is assigned model nv
+HIT ISIC_0035995.jpg is assigned model nv
+HIT ISIC_0035998.jpg is assigned model nv
+HIT ISIC_0035999.jpg is assigned model nv
+HIT ISIC_0036001.jpg is assigned model nv
+HIT ISIC_0036010.jpg is assigned model nv
+HIT ISIC_0036013.jpg is assigned model nv
+HIT ISIC_0036014.jpg is assigned model nv
+HIT ISIC_0036017.jpg is assigned model nv
+HIT ISIC_0036020.jpg is assigned model nv
+HIT ISIC_0036024.jpg is assigned model nv
+HIT ISIC_0036027.jpg is assigned model nv
+HIT ISIC_0036028.jpg is assigned model nv
+HIT ISIC_0036030.jpg is assigned model nv
+HIT ISIC_0036033.jpg is assigned model nv
+HIT ISIC_0036036.jpg is assigned model nv
+HIT ISIC_0036037.jpg is assigned model nv
+HIT ISIC_0036038.jpg is assigned model nv
+HIT ISIC_0036039.jpg is assigned model nv
+HIT ISIC_0036040.jpg is assigned model nv
+HIT ISIC_0036041.jpg is assigned model nv
+HIT ISIC_0036042.jpg is assigned model nv
+HIT ISIC_0036044.jpg is assigned model nv
+HIT ISIC_0036045.jpg is assigned model nv
+HIT ISIC_0036046.jpg is assigned model nv
+HIT ISIC_0036047.jpg is assigned model nv
+HIT ISIC_0036048.jpg is assigned model nv
+HIT ISIC_0036049.jpg is assigned model nv
+ERROR ISIC_0036052.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0036054.jpg is assigned model nv
+HIT ISIC_0036055.jpg is assigned model nv
+HIT ISIC_0036058.jpg is assigned model nv
+HIT ISIC_0036059.jpg is assigned model nv
+HIT ISIC_0036061.jpg is assigned model nv
+HIT ISIC_0034549.jpg is assigned model vasc
+HIT ISIC_0034555.jpg is assigned model vasc
+ERROR ISIC_0034608.jpg is assigned Model nv  True Model vasc
+ERROR ISIC_0034734.jpg is assigned Model nv  True Model vasc
+HIT ISIC_0034739.jpg is assigned model vasc
+HIT ISIC_0034805.jpg is assigned model vasc
+HIT ISIC_0034814.jpg is assigned model vasc
+HIT ISIC_0034822.jpg is assigned model vasc
+ERROR ISIC_0034858.jpg is assigned Model bcc  True Model vasc
+HIT ISIC_0034887.jpg is assigned model vasc
+HIT ISIC_0034896.jpg is assigned model vasc
+ERROR ISIC_0034905.jpg is assigned Model bcc  True Model vasc
+HIT ISIC_0034911.jpg is assigned model vasc
+HIT ISIC_0034937.jpg is assigned model vasc
+ERROR ISIC_0034951.jpg is assigned Model bcc  True Model vasc
+HIT ISIC_0034954.jpg is assigned model vasc
+HIT ISIC_0035194.jpg is assigned model vasc
+HIT ISIC_0035206.jpg is assigned model vasc
+ERROR ISIC_0035226.jpg is assigned Model bcc  True Model vasc
+HIT ISIC_0035247.jpg is assigned model vasc
+HIT ISIC_0035475.jpg is assigned model vasc
+ERROR ISIC_0035599.jpg is assigned Model mel  True Model vasc
+HIT ISIC_0035603.jpg is assigned model vasc
+HIT ISIC_0035633.jpg is assigned model vasc
+ERROR ISIC_0035724.jpg is assigned Model mel  True Model vasc
+ERROR ISIC_0035737.jpg is assigned Model bcc  True Model vasc
+ERROR ISIC_0035814.jpg is assigned Model nv  True Model vasc
+ERROR ISIC_0035852.jpg is assigned Model nv  True Model vasc
+ERROR ISIC_0035905.jpg is assigned Model mel  True Model vasc
+ERROR ISIC_0035910.jpg is assigned Model nv  True Model vasc
+HIT ISIC_0035925.jpg is assigned model vasc
+ERROR ISIC_0035931.jpg is assigned Model nv  True Model vasc
+HIT ISIC_0035946.jpg is assigned model vasc
+HIT ISIC_0035952.jpg is assigned model vasc
+HIT ISIC_0036000.jpg is assigned model vasc
+
+Total hits = 1226
+Total failures = 285
+Accuracy = 81.13831899404369%

@@ -1,0 +1,73 @@
+(alfonso1) c:\SkinCancerDetection_Resnet_Pytorch>python Guess224x224SkinCancer_Resnet_Pytorch.py
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\_distributor_init.py:30: UserWarning: loaded more than 1 DLL from .libs:
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas.FB5AE2TYXYH2IJRDKGDGQ3XBKLKTF43H.gfortran-win_amd64.dll
+C:\Users\Alfonso Blanco\.conda\envs\alfonso1\lib\site-packages\numpy\.libs\libopenblas64__v0.3.21-gcc_10_3_0.dll
+  warnings.warn("loaded more than 1 DLL from .libs:"
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:208: UserWarning: The parameter 'pretrained' is deprecated since 0.13 and may be removed in the future, please use 'weights' instead.
+  warnings.warn(
+C:\Users\Alfonso Blanco\AppData\Roaming\Python\Python39\site-packages\torchvision\models\_utils.py:223: UserWarning: Arguments other than a weight enum or `None` for 'weights' are deprecated since 0.13 and may be removed in the future. The current behavior is equivalent to passing `weights=ResNet50_Weights.IMAGENET1K_V1`. You can also use `weights=ResNet50_Weights.DEFAULT` to get the most up-to-date weights.
+  warnings.warn(msg)
+['akiec', 'bcc', 'bkl', 'df', 'mel', 'nv', 'vasc'] {'akiec': 0, 'bcc': 1, 'bkl': 2, 'df': 3, 'mel': 4, 'nv': 5, 'vasc': 6}
+Reading imagenes from  Dir_SkinCancer_Resnet_Pytorch\valid\
+akiec
+bcc
+bkl
+df
+mel
+nv
+vasc
+ Total images to test 48
+ERROR ISIC_0032854.jpg is assigned Model bkl  True Model akiec
+ERROR ISIC_0028728.jpg is assigned Model df  True Model bcc
+ERROR ISIC_0028978.jpg is assigned Model df  True Model bcc
+ERROR ISIC_0025366.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0028977.jpg is assigned model bkl
+ERROR ISIC_0032655.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0033620.jpg is assigned Model nv  True Model bkl
+ERROR ISIC_0034040.jpg is assigned Model nv  True Model bkl
+HIT ISIC_0033790.jpg is assigned model df
+HIT ISIC_0025611.jpg is assigned model mel
+ERROR ISIC_0032258.jpg is assigned Model nv  True Model mel
+ERROR ISIC_0032936.jpg is assigned Model nv  True Model mel
+HIT ISIC_0032985.jpg is assigned model mel
+ERROR ISIC_0033232.jpg is assigned Model nv  True Model mel
+HIT ISIC_0024830.jpg is assigned model nv
+HIT ISIC_0024955.jpg is assigned model nv
+HIT ISIC_0025652.jpg is assigned model nv
+ERROR ISIC_0026326.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0026440.jpg is assigned model nv
+HIT ISIC_0027345.jpg is assigned model nv
+HIT ISIC_0027924.jpg is assigned model nv
+HIT ISIC_0028008.jpg is assigned model nv
+HIT ISIC_0028338.jpg is assigned model nv
+HIT ISIC_0028380.jpg is assigned model nv
+HIT ISIC_0028399.jpg is assigned model nv
+HIT ISIC_0028438.jpg is assigned model nv
+HIT ISIC_0028585.jpg is assigned model nv
+HIT ISIC_0028618.jpg is assigned model nv
+HIT ISIC_0029030.jpg is assigned model nv
+HIT ISIC_0029038.jpg is assigned model nv
+HIT ISIC_0029143.jpg is assigned model nv
+HIT ISIC_0030038.jpg is assigned model nv
+ERROR ISIC_0030693.jpg is assigned Model bkl  True Model nv
+HIT ISIC_0030909.jpg is assigned model nv
+HIT ISIC_0031148.jpg is assigned model nv
+HIT ISIC_0031222.jpg is assigned model nv
+HIT ISIC_0031299.jpg is assigned model nv
+HIT ISIC_0031323.jpg is assigned model nv
+ERROR ISIC_0031359.jpg is assigned Model bcc  True Model nv
+HIT ISIC_0031454.jpg is assigned model nv
+HIT ISIC_0031488.jpg is assigned model nv
+HIT ISIC_0031547.jpg is assigned model nv
+HIT ISIC_0031649.jpg is assigned model nv
+HIT ISIC_0031791.jpg is assigned model nv
+HIT ISIC_0032102.jpg is assigned model nv
+HIT ISIC_0032221.jpg is assigned model nv
+HIT ISIC_0032273.jpg is assigned model nv
+HIT ISIC_0024904.jpg is assigned model vasc
+
+Total hits = 35
+Total failures = 13
+Accuracy = 72.91666666666667%
+
+(alfonso1) c:\SkinCancerDetection_Resnet_Pytorch>
