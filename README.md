@@ -40,7 +40,7 @@ Train224x224_SkinCancer_Resnet_Pytorch.py
 
 The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_10epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
 
-Next, the model obtained is tested: checkpoint_SkinCancer_10epoch.pth with the data from the specific Test file that is attached to the download as ISIC2018_Task3_Test_Images.zip (it must be unzipped)
+Next, the model obtained is tested: checkpoint_SkinCancer_10epoch.pth with the data from the specific test file that is attached to the download as ISIC2018_Task3_Test_Images.zip (it must be unzipped)
 
 Next, the structure necessary for the operation of resnet pytorch is created with the specific test file, consisting of a folder Dir_Test_SkinCancer_Resnet_Pytorch from which a folder called test hangs with subfolders for each of the 7 classes, by executing:
 
