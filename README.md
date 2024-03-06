@@ -22,7 +22,7 @@ All packages, if any are missing, can be installed with a simple pip in case the
 
 Download all the files that accompany this project in a single folder.
 
-By downloading the file from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T in the directory where the project is located, a file called dataverse_files.zip is obtained, which once decompressed as dataverse_files contains, among others, the files HAM10000_images_part1.zip and HAM10000_images_part2.zip, which once unzipped must be unified into a single HAM10000_images directory (through a simple copy and paste) in the same dataverse_files directory
+By downloading the file from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T in the directory where the project is located, a file called dataverse_files.zip is obtained, which once decompressed as dataverse_files contains, among others, the files HAM10000_images_part1.zip and HAM10000_images_part2.zip, which once unzipped must be unified into a single HAM10000_images folder (through a simple copy and paste) in the same dataverse_files directory
 
 Next, the structure necessary for the operation of resnet pytorch is created, consisting of a folder Dir_SkinCancer_Resnet_Pytorch from which a folder called train and another called valid hang, each with a subfolder for each of the 7 classes, by executing:
 
