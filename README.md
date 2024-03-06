@@ -4,12 +4,19 @@ Detection of skin lesions (among 7 classes) using the file https://dataverse.har
 According to the specifications of the download file, the 7 types of injuries to be detected are:
 
 akiec : Actinic keratoses and intraepithelial carcinoma / Bowen’s disease
+
 bkl : benign keratosis-like lesions (solar lentigines / seborrheic keratoses and lichen-planus like keratoses
+
 bcc: basal cell carcinoma
+
 df: dermatofibroma
+
 mel: melanoma
+
 nv: melanocytic nevi
+
 vasc: vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage
+
 
 All packages, if any are missing, can be installed with a simple pip in case the programs indicate their absence in the environment.
 
