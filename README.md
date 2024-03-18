@@ -68,7 +68,7 @@ Through the console, the prediction is obtained for each image and also in the o
 
 ModelsResults.txt
 
-The success rate may change if images of different quality than those used in the training process are tested. The program comes prepared to test 8 images (Test folder attached that must be unzipped) downloaded from https://www.skincancer.org /es/skin-cancer-information/skin-cancer-pictures/ and interpretation of the accuracy or approximation would require an expert.
+The success rate may change if images of different quality than those used in the training process are tested. The program comes prepared to test 8 images (Test folder attached that must be unzipped) downloaded from https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/ and interpretation of the accuracy or approximation would require an expert.
 By modifying the signature in line 90 of the program, you can test the set of images you want.
 
 References:
