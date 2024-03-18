@@ -84,6 +84,9 @@ print(classes, c_to_idx)
 
 
 def loadimagesTest():
+    # images from
+    # https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/
+    # 
     imgpath="Test"
     TotImages=0
     TabImagePath=[] 
@@ -117,7 +120,10 @@ def process_image(image):
     # Process a PIL image for use in a PyTorch model
   
     # Converting image to PIL image using image file path
-    pil_im = Image.open(f'{image}')
+    #pil_im = Image.open(f'{image}')
+    # https://stackoverflow.com/questions/58496858/pytorch-runtimeerror-the-size-of-tensor-a-4-must-match-the-size-of-tensor-b
+    # https://stackoverflow.com/users/1714410/shai
+    pil_im = Image.open(f'{image}').convert('RGB')
 
     """
 
