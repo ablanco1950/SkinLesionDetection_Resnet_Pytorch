@@ -81,5 +81,5 @@ https://www.kaggle.com/code/hadeerismail/skin-cancer-prediction-cnn-acc-98
 
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
-https://www.skincancer.org /es/skin-cancer-information/skin-cancer-pictures/
+https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/
 
