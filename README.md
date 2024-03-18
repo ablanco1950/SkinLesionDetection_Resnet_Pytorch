@@ -68,6 +68,9 @@ Through the console, the prediction is obtained for each image and also in the o
 
 ModelsResults.txt
 
+The success rate may change if images of different quality than those used in the training process are tested. The program comes prepared to test 8 images (Test folder attached that must be unzipped) downloaded from https://www.skincancer.org /es/skin-cancer-information/skin-cancer-pictures/ and interpretation of the accuracy or approximation would require an expert.
+By modifying the signature in line 90 of the program, you can test the set of images you want.
+
 References:
 
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
@@ -77,3 +80,6 @@ https://medium.com/@lfoster49203/skin-lesion-classification-with-deep-learning-a
 https://www.kaggle.com/code/hadeerismail/skin-cancer-prediction-cnn-acc-98
 
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
+
+https://www.skincancer.org /es/skin-cancer-information/skin-cancer-pictures/
+
