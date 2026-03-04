@@ -24,6 +24,8 @@ Download all the files that accompany this project in a single folder.
 
 By downloading the file from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T in the directory where the project is located, a file called dataverse_files.zip is obtained, which once decompressed as dataverse_files contains, among others, the files HAM10000_images_part1.zip and HAM10000_images_part2.zip, which once unzipped must be unified into a single HAM10000_images folder (through a simple copy and paste) in the same dataverse_files directory
 
+In that folder: dataverse_files, the file  ISIC2018_Task3_Test_Images.zip must be descompressed, which produces two nested directories named each one ISIC2018_Task3_Test_Images with 1115 images to test
+
 Next, the structure necessary for the operation of resnet pytorch is created, consisting of a folder Dir_SkinCancer_Resnet_Pytorch from which a folder called train and another called valid hang, each with a subfolder for each of the 7 classes, by executing:
 
 Create_DirSkinCancer_Resnet_Pytorch.py
@@ -31,16 +33,6 @@ Create_DirSkinCancer_Resnet_Pytorch.py
 This structure is then filled from the images contained in dataverse_files\HAM10000_images and following the order indicated in the file dataverse_files\HAM10000_metadata, by executing:
 
 Fill_DirSkinCancer_Resnet_Pytorch.py
-
-To avoid resnet errors if you find a valid folder in which one of its subfolders does not have images: unzip the attached valid.zip and copy the resulting valid folder (be careful there may be two nested valid ones, only consider the last one) over the folder Dir_SkinCancer_Resnet_Pytorch overwriting the old one, this way you ensure that all valid subfolders have at least some image.
-
-The model is trained and obtained by executing:
-
-Train224x224_SkinCancer_Resnet_Pytorch.py
-
-The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_10epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
-
-Next, the model obtained is tested: checkpoint_SkinCancer_10epoch.pth with the data from the specific test file that is attached to the download as ISIC2018_Task3_Test_Images.zip (it must be unzipped)
 
 Next, the structure necessary for the operation of resnet pytorch is created with the specific test file, consisting of a folder Dir_Test_SkinCancer_Resnet_Pytorch from which a folder called test hangs with subfolders for each of the 7 classes, by executing:
 
@@ -50,9 +42,17 @@ This structure is then filled from the images contained in dataverse_files\ISIC2
 
 Fill_Test_DirSkinCancer_Resnet_Pytorch.py
 
-The program is then executed:
+To avoid resnet errors, when  you find a valid folder in which one of its subfolders does not have images, unzip the attached valid.zip and copy the resulting valid folder (be careful there may be two nested valid ones, only consider the last one) over the folder Dir_SkinCancer_Resnet_Pytorch overwriting the old one, this way you ensure that all valid subfolders have at least some image.
 
-Guess_Test_224x224SkinCancer_Resnet_Pytorch.py
+The model is trained and obtained by executing:
+
+python Train224x224_SkinCancer_Resnet_Pytorch.py
+
+The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_10epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
+
+Next, the model obtained: checkpoint_SkinCancer_10epoch.pth, is tested 
+
+python Guess_Test_224x224SkinCancer_Resnet_Pytorch.py
 
 Who performs the test
 
