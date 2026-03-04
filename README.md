@@ -28,19 +28,19 @@ In that folder: dataverse_files, the file  ISIC2018_Task3_Test_Images.zip must b
 
 Next, the structure necessary for the operation of resnet pytorch is created, consisting of a folder Dir_SkinCancer_Resnet_Pytorch from which a folder called train and another called valid hang, each with a subfolder for each of the 7 classes, by executing:
 
-Create_DirSkinCancer_Resnet_Pytorch.py
+python Create_DirSkinCancer_Resnet_Pytorch.py
 
 This structure is then filled from the images contained in dataverse_files\HAM10000_images and following the order indicated in the file dataverse_files\HAM10000_metadata, by executing:
 
-Fill_DirSkinCancer_Resnet_Pytorch.py
+python Fill_DirSkinCancer_Resnet_Pytorch.py
 
 Next, the structure necessary for the operation of resnet pytorch is created with the specific test file, consisting of a folder Dir_Test_SkinCancer_Resnet_Pytorch from which a folder called test hangs with subfolders for each of the 7 classes, by executing:
 
-Create_Test_DirSkinCancer_Resnet_Pytorch.py
+python Create_Test_DirSkinCancer_Resnet_Pytorch.py
 
 This structure is then filled from the images contained in dataverse_files\ISIC2018_Task3_Test_Images\ISIC2018_Task3_Test_Images and following the order indicated in the file dataverse_files\ISIC2018_Task3_Test_GroundTruth.csv, by executing:
 
-Fill_Test_DirSkinCancer_Resnet_Pytorch.py
+python Fill_Test_DirSkinCancer_Resnet_Pytorch.py
 
 To avoid resnet errors, when  you find a valid folder in which one of its subfolders does not have images, unzip the attached valid.zip and copy the resulting valid folder (be careful there may be two nested valid ones, only consider the last one) over the folder Dir_SkinCancer_Resnet_Pytorch overwriting the old one, this way you ensure that all valid subfolders have at least some image.
 
