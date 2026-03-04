@@ -20,6 +20,24 @@ vasc: vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorr
 
 All packages, if any are missing, can be installed with a simple pip in case the programs indicate their absence in the environment.
 
+If not yet installed, this packages are:
+
+pip install numpy
+
+pip install pandas
+
+pip install keras
+
+pip  install tensorflow
+
+pip install opencv-python
+
+pip install scikit-learn 
+
+pip install torch
+
+pip install torchvision
+
 Download all the files that accompany this project in a single folder.
 
 By downloading the file from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T in the directory where the project is located, a file called dataverse_files.zip is obtained, which once decompressed as dataverse_files contains, among others, the files HAM10000_images_part1.zip and HAM10000_images_part2.zip, which once unzipped must be unified into a single HAM10000_images folder (through a simple copy and paste) in the same dataverse_files directory
