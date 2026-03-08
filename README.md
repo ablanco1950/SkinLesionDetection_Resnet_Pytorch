@@ -112,6 +112,7 @@ https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
 https://medium.com/@lfoster49203/skin-lesion-classification-with-deep-learning-a-transfer-learning-approach-e1bc7d2b3d45
 
 https://www.kaggle.com/code/hadeerismail/skin-cancer-prediction-cnn-acc-98
+I have tried to adapt this project in other cases, but it shows overfitting, there are  poor results  when trying to test the model with unseen data
 
 https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
