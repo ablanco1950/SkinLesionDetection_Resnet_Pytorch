@@ -68,6 +68,14 @@ python Train224x224_SkinCancer_Resnet_Pytorch.py
 
 The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
 
+To enhance the training developed on a personal computer, a training program has been implemented to continue the training using a model obtained in a previous step.
+
+python CONTrain224x224_SkinCancer_Resnet_Pytorch.py
+
+which continues the training based on the checkpoint_SkinCancer_epoch.pth model obtained in a previous step.
+
+The training log with 40 epochs is recorded in the document LOG40epoch.txt
+
 Next, the model obtained: checkpoint_SkinCancer_epoch.pth, is tested 
 
 python Guess_Test_224x224SkinCancer_Resnet_Pytorch.py
