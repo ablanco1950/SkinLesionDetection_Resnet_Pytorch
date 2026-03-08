@@ -54,19 +54,21 @@ model.fc = nn.Linear(num_ftrs, 7)
 #TabCarBrand=[]
 def load_checkpoint(filepath):
 
-    checkpoint = torch.load(filepath)
+    checkpoint = torch.load(filepath, weights_only=False)
     
-    #model.load_state_dict(checkpoint['state_dict'])
-    model.load_state_dict(checkpoint['state_dict'], strict=False)
+    #model.load_state_dict(checkpoint['state_dict']) # mod
+    
     #model.class_to_idx = checkpoint['class_to_idx']
     
     return model
 
 #model_path= "my_checkpoint1.pth"
-model_path= "checkpoint_SkinCancer_10epoch.pth"
+#model_path= "checkpoint_SkinCancer_10epoch.pth"
+model_path= "checkpoint_SkinCancer_epoch.pth"
 
 
-model = load_checkpoint('checkpoint_SkinCancer_10epoch.pth')
+model = load_checkpoint('checkpoint_SkinCancer_epoch.pth')
+
 # Checking model i.e. should have 43 output units in the classifier
 #print(model)
 #DataPath='C:\\archiveKaggle\\cars_train\\cars_train' + '\\'
