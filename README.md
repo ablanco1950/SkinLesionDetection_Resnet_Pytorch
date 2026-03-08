@@ -97,6 +97,14 @@ ModelsResults.txt
 The success rate may change if images of different quality than those used in the training process are tested. The program comes prepared to test 8 images (Test folder attached that must be unzipped) downloaded from https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/ and interpretation of the accuracy or approximation would require an expert.
 By modifying the path in line 90 of the program, you can test the set of images you want.
 
+CONCLUSIONS:
+
+The model obtained is only suitable for detecting benign skin lesions (nv: melanocytic nevi), with a hit rate of 94.93% (862 images ), 46 false negatives, and 144 false positives. This is the class with the largest number of images for training and testing.
+
+For the other lesions, the hit rate is much lower and unacceptable.
+
+Therefore, this project requires further improvement.
+
 References:
 
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
