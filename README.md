@@ -66,9 +66,9 @@ The model is trained and obtained by executing:
 
 python Train224x224_SkinCancer_Resnet_Pytorch.py
 
-The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_10epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
+The execution log is attached as a file LOG_TrainSkinCancer_10epoch.txt and as a result the model checkpoint_SkinCancer_epoch.pth is obtained (it is not attached because its size exceeds the file size limit that can be uploaded to github)
 
-Next, the model obtained: checkpoint_SkinCancer_10epoch.pth, is tested 
+Next, the model obtained: checkpoint_SkinCancer_epoch.pth, is tested 
 
 python Guess_Test_224x224SkinCancer_Resnet_Pytorch.py
 
