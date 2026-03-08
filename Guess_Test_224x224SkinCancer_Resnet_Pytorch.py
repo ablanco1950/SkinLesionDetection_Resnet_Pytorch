@@ -54,7 +54,7 @@ model.fc = nn.Linear(num_ftrs, 7)
 #TabCarBrand=[]
 def load_checkpoint(filepath):
 
-    checkpoint = torch.load(filepath)
+    checkpoint = torch.load(filepath, weights_only=False) #MOD
     
     #model.load_state_dict(checkpoint['state_dict'])
     model.load_state_dict(checkpoint['state_dict'], strict=False)
@@ -63,10 +63,12 @@ def load_checkpoint(filepath):
     return model
 
 #model_path= "my_checkpoint1.pth"
-model_path= "checkpoint_SkinCancer_10epoch.pth"
+#model_path= "checkpoint_SkinCancer_10epoch.pth" # mod
+model_path= "checkpoint_SkinCancer_epoch.pth"
 
 
-model = load_checkpoint('checkpoint_SkinCancer_10epoch.pth')
+#model = load_checkpoint('checkpoint_SkinCancer_10epoch.pth') #MOD
+model = load_checkpoint('checkpoint_SkinCancer_epoch.pth')
 # Checking model i.e. should have 43 output units in the classifier
 #print(model)
 #DataPath='C:\\archiveKaggle\\cars_train\\cars_train' + '\\'
@@ -104,11 +106,21 @@ def loadimagesTest():
     TabImagePath = []
     NameImages=[]
     Y=[]
+    Y_numerical=[]
     
     for i in range(len(TabDirName)):
     
         imgpath1=imgpath+ str(TabDirName[i])+"\\"
+
         #print(imgpath1)
+        target = TabDirName[i]
+
+        try:
+             index = TabSkinCancer.index(target)  # Finds first occurrence
+             print(f"'{target}' found at index {index}")
+        except ValueError:
+            print(f"'{target}' not found in the list")
+            continue
         
         # https://stackoverflow.com/questions/62137343/how-to-get-full-path-with-os-walk-function-in-python
         for root, dirnames, filenames in os.walk(imgpath1):
@@ -123,15 +135,21 @@ def loadimagesTest():
                 #cv2.imshow("image",image)
                 #cv2.waitKey(0)
                 #images.append(image)
+
+                               
                 TabImagePath.append(filepath)
                 NameImages.append(filename)
-                Y.append(TabDirName[i])       
+                #Y.append(TabDirName[i])
+                Y.append(TabDirName[i])
+                Y_numerical.append(index)
+                
                 TotImages+=1
                 
+                                
                 
     print( " Total images to test "  + str(TotImages))     
 
-    return TabImagePath, Y, NameImages
+    return TabImagePath, Y, Y_numerical, NameImages
 
 
 def process_image(image):
@@ -199,12 +217,19 @@ from tensorflow.keras.models import load_model
 
 
 #TabImagePath_test, Y_test, imageName_test=loadimagesTest()
-TabImagePath, Y_test, imageName_test=loadimagesTest()
+TabImagePath, Y_test, Y_numerical_test, imageName_test=loadimagesTest()
 #print(TabImagePath)
 #print(Y_test)
 
 TotalHits=0
 TotalFailures=0
+
+# https://stackoverflow.com/questions/6667201/how-to-define-a-two-dimensional-array
+# Creates a list containing 7 lists, each of 7 items, all set to 0
+w, h = 7, 7
+CrossTable = [[0 for x in range(w)] for y in range(h)] 
+
+
 with open( "ModelsResults.txt" ,"w") as  w:
     
     
@@ -221,6 +246,13 @@ with open( "ModelsResults.txt" ,"w") as  w:
         NameSkinCancerPredicted=TabSkinCancer[predicted1[0]]
         #NameSkinCancerTrue=TabSkinCancer[int(Y_test[i])-1]
         NameSkinCancerTrue=Y_test[i]
+
+        #print(Y_numerical_test[i])
+        #print(predicted1[0])
+
+        CrossTable[Y_numerical_test[i]][predicted1[0]] = CrossTable[Y_numerical_test[i]][predicted1[0]] +1
+
+        
         #IntClassPredicted= predicted1[0]
         #ClassPredicted=str(IntClassPredicted)
         #if len(ClassPredicted) < 2 : ClassPredicted="0"+ClassPredicted
@@ -237,6 +269,11 @@ with open( "ModelsResults.txt" ,"w") as  w:
                  
           
             TotalHits=TotalHits+1
+
+        #print (CrossTable)
+
+      
+        
         lineaw=[]
         lineaw.append(imageName_test[i]) 
         lineaw.append(Y_test[i])
@@ -245,9 +282,35 @@ with open( "ModelsResults.txt" ,"w") as  w:
         lineaWrite =','.join(lineaw)
         lineaWrite=lineaWrite + "\n"
         w.write(lineaWrite)
-
+       
     
 print("")
 print("Total hits = " + str(TotalHits))  
 print("Total failures = " + str(TotalFailures) )     
-print("Accuracy = " + str(TotalHits*100/(TotalHits + TotalFailures)) + "%") 
+print("Accuracy = " + str(TotalHits*100/(TotalHits + TotalFailures)) + "%")
+print (CrossTable)
+
+TotHits=0
+
+for i in range (len(TabSkinCancer)):
+    TotFalseNegatives=0
+    TotFalsePositives=0
+    for j in range (len(TabSkinCancer)):
+        if i==j:
+            TotHits =CrossTable[i][j]
+            for k in range(len(TabSkinCancer)):
+                           if k!=j:
+                              TotFalsePositives=TotFalsePositives + CrossTable[k][j]
+            
+        else:    
+            TotFalseNegatives=TotFalseNegatives + CrossTable[i][j]
+
+    # Find False Positivs
+
+    
+    #print(TotHits)
+    print(TabSkinCancer[i] + " Hits=" + str(TotHits) + " Hit rate=" + "{:.2f}". format(TotHits*100/(TotHits+TotFalseNegatives)) + \
+          "% FN = " + str(TotFalseNegatives)  +   " FP = " + str(TotFalsePositives))
+            
+        
+    

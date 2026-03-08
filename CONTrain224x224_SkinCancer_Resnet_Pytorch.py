@@ -21,6 +21,17 @@ import torchvision.models as models
 from PIL import Image
 
 
+#TabCarBrand=[]
+def load_checkpoint(filepath):
+
+    checkpoint = torch.load(filepath, weights_only=False) #MOD
+    
+    #model.load_state_dict(checkpoint['state_dict'])
+    #model.load_state_dict(checkpoint['state_dict'], strict=False)
+    #model.class_to_idx = checkpoint['class_to_idx']
+    
+    return model
+
 
 train_transforms = transforms.Compose([transforms.Resize((224,224)),
                                        transforms.RandomRotation(30),
@@ -54,6 +65,19 @@ validloader = torch.utils.data.DataLoader(valid_data, batch_size=32, shuffle=Tru
 #from torchvision.models import ResNet50_Weights
 model = models.resnet50(pretrained=True)
 #model = models.resnet50(weights=ResNet50_Weights.DEFAULT)
+
+#model_path= "my_checkpoint1.pth"
+model_path= "checkpoint_SkinCancer_epoch.pth" # mod
+
+
+
+#model = load_checkpoint('checkpoint_SkinCancer_10epoch.pth') #MOD
+model = load_checkpoint('checkpoint_SkinCancer_epoch.pth')
+# Checking model i.e. should have 43 output units in the classifier
+#print(model)
+
+
+
 num_ftrs = model.fc.in_features
 model.fc = nn.Linear(num_ftrs, 7)
 
@@ -183,4 +207,4 @@ checkpoint = {'state_dict': model.state_dict(),
               'num_epochs': epochs}
 
 
-torch.save(checkpoint, 'checkpoint_SkinCancer_10epoch.pth')
+torch.save(checkpoint, 'checkpoint_SkinCancer_epoch.pth')
