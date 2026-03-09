@@ -63,6 +63,8 @@ python Fill_Test_DirSkinCancer_Resnet_Pytorch.py
 
 To avoid resnet errors, when  you find a valid folder in which one of its subfolders does not have images, unzip the attached valid.zip and copy the resulting valid folder (be careful there may be two nested valid ones, only consider the last one) over the folder Dir_SkinCancer_Resnet_Pytorch overwriting the old one, this way you ensure that all valid subfolders have at least some image.
 
+TRAINING:
+
 The model is trained and obtained by executing:
 
 python Train224x224_SkinCancer_Resnet_Pytorch.py
@@ -78,6 +80,8 @@ which continues the training based on the checkpoint_SkinCancer_epoch.pth model 
 The training log with 40 epochs is recorded in the document LOG40epoch.txt
 
 Next, the model obtained: checkpoint_SkinCancer_epoch.pth, is tested 
+
+EVALUATION:
 
 python Guess_Test_224x224SkinCancer_Resnet_Pytorch.py
 
@@ -100,7 +104,7 @@ By modifying the path in line 90 of the program, you can test the set of images 
 
 CONCLUSIONS:
 
-The model obtained is only suitable for detecting benign skin lesions (nv: melanocytic nevi), with a hit rate of 94.93% (862 correct images ), 46 false negatives, and 144 false positives. This is the class with the largest number of images for training and testing.
+The model obtained is only suitable for detecting benign skin lesions (nv: melanocytic nevi), with a hit rate of 94.93% :862 correct images, 46 false negatives, and 144 false positives. This is the class with the largest number of images for training and testing.
 
 For the other lesions, the hit rate is much lower and unacceptable.
 
