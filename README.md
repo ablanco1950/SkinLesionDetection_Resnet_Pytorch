@@ -17,7 +17,7 @@ nv: melanocytic nevi
 
 vasc: vascular lesions (angiomas, angiokeratomas, pyogenic granulomas and hemorrhage
 
-Instalation:
+INSTALLATION:
 
 All packages, if any are missing, can be installed with a simple pip in case the programs indicate their absence in the environment.
 
