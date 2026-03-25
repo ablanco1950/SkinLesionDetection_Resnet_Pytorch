@@ -110,6 +110,18 @@ For the other lesions, the hit rate is much lower and unacceptable.
 
 Therefore, this project requires further improvement.
 
+March 24, 2026
+
+I have tested the generally successful and fast feature extraction procedure using a CNN followed by an SVM, adapting the project found at https://www.kaggle.com/code/saadmohamed99/plant-disease-classification. I used the following programs:
+
+Train_SkinLesions_FeaturesExtracted_SVM.py for training
+
+and
+
+Test_SkinLesions_FeaturesExtracted_SVM.py for testing with data not used in the training procedure (unseen data).
+
+The results do not improve, as can be seen in the attached log file: LOG_SkinLesions_FeaturesExtracted_SVM.doc
+
 References:
 
 https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/DBW86T
@@ -124,5 +136,7 @@ https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/
 
 The results are similar to those obtained at: https://www.kaggle.com/code/ajayrajparashar/skin-cancer-detection-using-cnn-and-vit-ham10000
+
+https://www.kaggle.com/code/saadmohamed99/plant-disease-classification
 
 
