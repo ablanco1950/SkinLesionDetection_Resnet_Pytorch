@@ -135,6 +135,9 @@ https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 
 https://www.skincancer.org/es/skin-cancer-information/skin-cancer-pictures/
 
+https://github.com/ablanco1950/SkinLessionClassification_Yolo26
+
+
 The results are similar to those obtained at: https://www.kaggle.com/code/ajayrajparashar/skin-cancer-detection-using-cnn-and-vit-ham10000
 
 https://www.kaggle.com/code/saadmohamed99/plant-disease-classification
